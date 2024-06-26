@@ -194,6 +194,30 @@ Legend: <span class="badge badge-danger">Oral presentation</span> <span class="b
 </p>
 -->
 
+<strong> Speech language models lack important brain-relevant semantics </strong>
+  <br> S.R. Oota, E. Çelik, F. Deniz, and <strong> M. Toneva </strong>
+  <br>
+<span class="badge badge-info">ACL 2024</span>
+
+  <a href="#acl-2024" data-toggle="collapse" aria-expanded="false" aria-controls="acl-2024">[abs]</a>
+  <a href="https://arxiv.org/abs/2311.04664" target="_blank">[pdf]</a>
+<div class="collapse" id="acl-2024">
+<p> Despite known differences between reading and listening in the brain, recent work has shown that text-based language models predict both text-evoked and speech-evoked brain activity to an impressive degree. This poses the question of what types of information language models truly predict in the brain. We investigate this question via a direct approach, in which we systematically remove specific low-level stimulus features (textual, speech, and visual) from language model representations to assess their impact on alignment with fMRI brain recordings during reading and listening. Comparing these findings with speech-based language models reveals starkly different effects of low-level features on brain alignment. While text-based models show reduced alignment in early sensory regions post-removal, they retain significant predictive power in late language regions. In contrast, speech-based models maintain strong alignment in early auditory regions even after feature removal but lose all predictive power in late language regions. These results suggest that speech-based models provide insights into additional information processed by early auditory regions, but caution is needed when using them to model processing in late language regions. We make our code publicly available.
+</div>
+<hr>
+
+<strong> Perturbed examples reveal invariances shared by language models </strong>
+  <br> R. Rawal and <strong> M. Toneva </strong>
+  <br>
+<span class="badge badge-info">ACL 2024 Findings</span>
+
+  <a href="#acl-2024-findings" data-toggle="collapse" aria-expanded="false" aria-controls="acl-2024-findings">[abs]</a>
+  <a href="https://arxiv.org/abs/2311.04166" target="_blank">[pdf]</a>
+<div class="collapse" id="acl-2024-findings">
+<p> An explosion of work in language is leading to ever-increasing numbers of available natural language processing models, with little understanding of how new models compare to better-understood models. One major reason for this difficulty is saturating benchmark datasets, which may not reflect well differences in model performance in the wild. In this work, we propose a novel framework for comparing two natural language processing models by revealing their shared invariance to interpretable input perturbations that are designed to target a specific linguistic capability (e.g., Synonym-Invariance, Typo-Invariance). Via experiments on models from within the same and across different architecture families, this framework offers a number of insights about how changes in models (e.g., distillation, increase in size, amount of pre-training) affect multiple well-defined linguistic capabilities. Furthermore, we also demonstrate how our framework can enable evaluation of the invariances shared between models that are available as commercial black-box APIs (e.g., InstructGPT family) and models that are relatively better understood (e.g., GPT-2). Across several experiments, we observe that large language models share many of the invariances encoded by models of various sizes, whereas the invariances encoded by large language models are only shared by other large models. Possessing a wide variety of invariances may be a key reason for the recent successes of large language models, and our framework can shed light on the types of invariances that are retained by or emerge in new models.
+</div>
+<hr>
+	
 <strong> Joint processing of linguistic properties in brains and language models </strong>
   <br> S.R. Oota, M. Gupta, and <strong> M. Toneva </strong>
   <br>
@@ -203,6 +227,30 @@ Legend: <span class="badge badge-danger">Oral presentation</span> <span class="b
   <a href="https://arxiv.org/abs/2212.08094" target="_blank">[pdf]</a>
 <div class="collapse" id="subba-abs">
 <p> Language models have been shown to be very effective in predicting brain recordings of subjects experiencing complex language stimuli. For a deeper understanding of this alignment, it is important to understand the alignment between the detailed processing of linguistic information by the human brain versus language models. In NLP, linguistic probing tasks have revealed a hierarchy of information processing in neural language models that progresses from simple to complex with an increase in depth. On the other hand, in neuroscience, the strongest alignment with high-level language brain regions has consistently been observed in the middle layers. These findings leave an open question as to what linguistic information actually underlies the observed alignment between brains and language models. We investigate this question via a direct approach, in which we eliminate information related to specific linguistic properties in the language model representations and observe how this intervention affects the alignment with fMRI brain recordings obtained while participants listened to a story. We investigate a range of linguistic properties (surface, syntactic and semantic) and find that the elimination of each one results in a significant decrease in brain alignment across all layers of a language model. These findings provide direct evidence for the role of specific linguistic information in the alignment between brain and language models, and opens new avenues for mapping the joint information processing in both systems. 
+</div>
+<hr>
+
+<strong> Getting aligned on representational alignment </strong>
+  <br> I. Sucholutsky, L. Muttenthaler, (many authors), <strong> M. Toneva </strong>, and T.L. Griffiths
+  <br>
+<span class="badge badge-secondary">arXiv 2023</span>
+
+  <a href="#lukas-abs" data-toggle="collapse" aria-expanded="false" aria-controls="lukas-abs">[abs]</a>
+  <a href="https://arxiv.org/abs/2310.13018" target="_blank">[pdf]</a>
+<div class="collapse" id="lukas-abs">
+<p> Biological and artificial information processing systems form representations of the world that they can use to categorize, reason, plan, navigate, and make decisions. To what extent do the representations formed by these diverse systems agree? Can diverging representations still lead to the same behaviors? And how can systems modify their representations to better match those of another system? These questions pertaining to the study of \textbf{\emph{representational alignment}} are at the heart of some of the most active research areas in contemporary cognitive science, neuroscience, and machine learning. Unfortunately, there is limited knowledge-transfer between research communities interested in representational alignment, and much of the progress in one field ends up being rediscovered independently in another, when greater cross-field communication would be advantageous. To improve communication between fields, we propose a unifying framework that can serve as a common language between researchers studying representational alignment. We survey the literature from the fields of cognitive science, neuroscience, and machine learning, and demonstrate how prior work fits into this framework. Finally, we lay out open problems in representational alignment where progress can benefit all three fields. We hope that our work can catalyze cross-disciplinary collaboration and accelerate progress for all communities studying and developing information processing systems. We note that this is a working paper and encourage readers to reach out with their suggestions for future revisions.
+</div>
+<hr>
+
+<strong> Vision-language integration in multimodal video transformers (partially) aligns with the brain </strong>
+  <br> D.T. Dong and <strong> M. Toneva </strong>
+  <br>
+<span class="badge badge-secondary">arXiv 2023</span>
+
+  <a href="#dota-abs" data-toggle="collapse" aria-expanded="false" aria-controls="dota-abs">[abs]</a>
+  <a href="https://arxiv.org/abs/2311.07766" target="_blank">[pdf]</a>
+<div class="collapse" id="dota-abs">
+<p> Integrating information from multiple modalities is arguably one of the essential prerequisites for grounding artificial intelligence systems with an understanding of the real world. Recent advances in video transformers that jointly learn from vision, text, and sound over time have made some progress toward this goal, but the degree to which these models integrate information from modalities still remains unclear. In this work, we present a promising approach for probing a pre-trained multimodal video transformer model by leveraging neuroscientific evidence of multimodal information processing in the brain. Using brain recordings of participants watching a popular TV show, we analyze the effects of multi-modal connections and interactions in a pre-trained multi-modal video transformer on the alignment with uni- and multi-modal brain regions. We find evidence that vision enhances masked prediction performance during language processing, providing support that cross-modal representations in models can benefit individual modalities. However, we don't find evidence of brain-relevant information captured by the joint multi-modal transformer representations beyond that captured by all of the individual modalities. We finally show that the brain alignment of the pre-trained joint representation can be improved by fine-tuning using a task that requires vision-language inferences. Overall, our results paint an optimistic picture of the ability of multi-modal transformers to integrate vision and language in partially brain-relevant ways but also show that improving the brain alignment of these models may require new approaches.
 </div>
 <hr>
 	
