@@ -172,6 +172,42 @@ Teaching a seminar course on <a href="https://bridge-ai-neuro.github.io/" target
 Legend: <span class="badge badge-danger">Oral presentation</span> <span class="badge badge-info">ML venues</span> <span class="badge badge-success">Neuro venues</span> <span class="badge badge-warning">Cogsci venues</span> <span class="badge badge-secondary">preprints</span>
 </p>
 -->
+	
+<strong> Language models and brains align due to more than next-word prediction and word-level information </strong>
+  <br> G. Merlin and <strong> M. Toneva </strong>
+  <br>
+  <span class="badge badge-info">EMNLP 2024</span>
+
+  <a href="#gabriele-abs" data-toggle="collapse" aria-expanded="false" aria-controls="gabriele-abs">[abs]</a>
+  <a href="https://arxiv.org/abs/2212.00596" target="_blank">[pdf]</a>
+<div class="collapse" id="gabriele-abs">
+<p>  Pretrained language models have been shown to significantly predict brain recordings of people comprehending language. Recent work suggests that the prediction of the next word is a key mechanism that contributes to this alignment. What is not yet understood is whether prediction of the next word is necessary for this observed alignment or simply sufficient, and whether there are other shared mechanisms or information that are similarly important. In this work, we take a step towards understanding the reasons for brain alignment via two simple perturbations in popular pretrained language models. These perturbations help us design contrasts that can control for different types of information. By contrasting the brain alignment of these differently perturbed models, we show that improvements in alignment with brain recordings are due to more than improvements in next-word prediction and word-level information.
+</div>
+<hr>
+
+<strong> Improving semantic understanding in speech language models via brain-tuning </strong>
+  <br> O. Moussa, D. Klakow, and <strong> M. Toneva </strong>
+  <br>
+<span class="badge badge-secondary">arXiv 2024</span>
+
+  <a href="#omer-abs" data-toggle="collapse" aria-expanded="false" aria-controls="omer-abs">[abs]</a>
+  <a href="https://arxiv.org/abs/2410.09230" target="_blank">[pdf]</a>
+<div class="collapse" id="omer-abs">
+<p> Speech-language models align impressively with human brain responses to natural language. However, current models rely heavily on low-level speech features, indicating they lack brain-relevant semantics, limiting their utility as models of semantic processing in the brain. In this work, we address this limitation by inducing brain-relevant bias into the models via fine-tuning with fMRI recordings of people listening to natural stories, a process we call brain-tuning. After testing it on three different pretrained backbones, we show that brain-tuning improves alignment with new brain recordings in semantic language regions and reduces reliance on low-level speech features. Notably, brain-tuning leads to 1) consistent improvements in performance across various downstream tasks and 2) a representational space with increased semantic preference. Our results provide the first evidence that incorporating brain signals into the training of language models improves their semantic understanding.
+</div>
+<hr>
+
+<strong> Assessing episodic memory in LLMs with sequence order recall tasks </strong>
+  <br> M. Pink, V. Vo, Q. Wu, J. Mu, J. Turek, U. Hasson, K. Norman, S. Michelmann, A. Huth, and <strong> M. Toneva </strong>
+  <br>
+<span class="badge badge-secondary">arXiv 2024</span>
+
+  <a href="#mathis-abs" data-toggle="collapse" aria-expanded="false" aria-controls="mathis-abs">[abs]</a>
+  <a href="https://arxiv.org/abs/2410.08133" target="_blank">[pdf]</a>
+<div class="collapse" id="lukas-abs">
+<p> Current LLM benchmarks focus on evaluating models' memory of facts and semantic relations, primarily assessing semantic aspects of long-term memory. However, in humans, long-term memory also includes episodic memory, which links memories to their contexts, such as the time and place they occurred. The ability to contextualize memories is crucial for many cognitive tasks and everyday functions. This form of memory has not been evaluated in LLMs with existing benchmarks. To address the gap in evaluating memory in LLMs, we introduce Sequence Order Recall Tasks (SORT), which we adapt from tasks used to study episodic memory in cognitive psychology. SORT requires LLMs to recall the correct order of text segments, and provides a general framework that is both easily extendable and does not require any additional annotations. We present an initial evaluation dataset, Book-SORT, comprising 36k pairs of segments extracted from 9 books recently added to the public domain. Based on a human experiment with 155 participants, we show that humans can recall sequence order based on long-term memory of a book. We find that models can perform the task with high accuracy when relevant text is given in-context during the SORT evaluation. However, when presented with the book text only during training, LLMs' performance on SORT falls short. By allowing to evaluate more aspects of memory, we believe that SORT will aid in the emerging development of memory-augmented models.
+</div>
+<hr>
 
 <strong> Speech language models lack important brain-relevant semantics </strong>
   <br> S.R. Oota, E. Çelik, F. Deniz, and <strong> M. Toneva </strong>
@@ -301,18 +337,6 @@ Legend: <span class="badge badge-danger">Oral presentation</span> <span class="b
   <a href="https://www.nature.com/articles/s43588-022-00354-6" target="_blank">[pdf]</a>
 <div class="collapse" id="supraword-abs">
 <p> To study a core component of human intelligence---our ability to combine the meaning of words---neuroscientists look for neural correlates of meaning composition, such as brain activity proportional to the difficulty of understanding a sentence. However, little is known about the product of meaning composition---the combined meaning of words beyond their individual meaning. We term this product ``supra-word meaning” and devise a computational representation for it by using recent neural network algorithms and a new technique to disentangle composed- from individual-word meaning. Using functional magnetic resonance imaging, we reveal that hubs that are thought to process lexical-level meaning also maintain supra-word meaning, suggesting a common substrate for lexical and combinatorial semantics. Surprisingly, we cannot detect supra-word meaning in magnetoencephalography, which suggests that composed meaning is maintained through a different neural mechanism than synchronized firing. This sensitivity difference has implications for past neuroimaging results and future wearable neurotechnology. </p>
-</div>
-<hr>
-	
-<strong> Language models and brain alignment: beyond word-level semantics and prediction </strong>
-  <br> G. Merlin and <strong> M. Toneva </strong>
-  <br>
-  <span class="badge badge-secondary">arXiv 2022</span>
-
-  <a href="#gabriele-abs" data-toggle="collapse" aria-expanded="false" aria-controls="gabriele-abs">[abs]</a>
-  <a href="https://arxiv.org/abs/2212.00596" target="_blank">[pdf]</a>
-<div class="collapse" id="gabriele-abs">
-<p>  Pretrained language models that have been trained to predict the next word over billions of text documents have been shown to also significantly predict brain recordings of people comprehending language. Understanding the reasons behind the observed similarities between language in machines and language in the brain can lead to more insight into both systems. Recent works suggest that the prediction of the next word is a key mechanism that contributes to the alignment between the two. What is not yet understood is whether prediction of the next word is necessary for this observed alignment or simply sufficient, and whether there are other shared mechanisms or information that is similarly important. In this work, we take a first step towards a better understanding via two simple perturbations in a popular pretrained language model. The first perturbation is to improve the model's ability to predict the next word in the specific naturalistic stimulus text that the brain recordings correspond to. We show that this indeed improves the alignment with the brain recordings. However, this improved alignment may also be due to any improved word-level or multi-word level semantics for the specific world that is described by the stimulus narrative. We aim to disentangle the contribution of next word prediction and semantic knowledge via our second perturbation: scrambling the word order at inference time, which reduces the ability to predict the next word, but maintains any newly learned word-level semantics. By comparing the alignment with brain recordings of these differently perturbed models, we show that improvements in alignment with brain recordings are due to more than improvements in next word prediction and word-level semantics. 
 </div>
 <hr>
 	
