@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Homepage">
+    <meta name="author" content="Mariya Toneva">
+    <meta name="keywords" content="Mariya Toneva Max Planck Institute Software Systems MPI SWS language brain NLP Carnegie Mellon University Machine Learning Department Neural Computation Neuroscience Yale">
+    <title>Mariya Toneva's homepage</title>
+
+    <link rel="canonical" href="http://mtoneva.com">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+	  <!-- Google tag (gtag.js) -->
+	  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RQPWTS9T6Z"></script>
+	  <script>
+	    window.dataLayer = window.dataLayer || [];
+	    function gtag(){dataLayer.push(arguments);}
+	    gtag('js', new Date());
+	    gtag('config', 'G-RQPWTS9T6Z');
+	  </script>
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-md fixed-top border-bottom border-2 bg-light">
+	<div class="container">
+		<a class="navbar-brand" href="index.html">Mariya Toneva</a>
+	  <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+	        data-bs-target="#navbarCollapse" aria-controls="navbarCollapse"
+	        aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+	    <div class="navbar-nav justify-content-end">
+	      <a class="nav-link active" aria-current="page" href="pub.html">Publications</a>
+	      <a class="nav-link" href="group.html">Group</a>
+		     <a class="nav-link" href="talks.html">Talks</a>
+	      <a class="nav-link" href="teaching.html">Teaching</a>
+	    </div>
+	  </div>
+	</div>
+	</nav>
+
+<main role="main" class="container py-4">
+<section id="publications" name="publications" class="container">
+<h3>Publications and Preprints</h3>
+<span class="badge text-bg-info">ML venues</span> <span class="badge text-bg-success">Neuro venues</span> <span class="badge text-bg-warning">Cogsci venues</span> <span class="badge text-bg-secondary">Preprints</span>
+<hr class="mt-5">
+
+<strong> Language models and brains align due to more than next-word prediction and word-level information </strong>
+  <br> G. Merlin and <strong> M. Toneva </strong>
+  <br>
+  <span class="badge text-bg-info">EMNLP 2024</span>
+
+  <a href="#gabriele-abs" data-bs-toggle="collapse" aria-expanded="false" aria-controls="gabriele-abs">[abs]</a>
+  <a href="https://arxiv.org/abs/2212.00596" target="_blank">[pdf]</a>
+<div class="collapse" id="gabriele-abs">
+<p>  Pretrained language models have been shown to significantly predict brain recordings of people comprehending language. Recent work suggests that the prediction of the next word is a key mechanism that contributes to this alignment. What is not yet understood is whether prediction of the next word is necessary for this observed alignment or simply sufficient, and whether there are other shared mechanisms or information that are similarly important. In this work, we take a step towards understanding the reasons for brain alignment via two simple perturbations in popular pretrained language models. These perturbations help us design contrasts that can control for different types of information. By contrasting the brain alignment of these differently perturbed models, we show that improvements in alignment with brain recordings are due to more than improvements in next-word prediction and word-level information.
+</div>
+<hr>
+
+<strong> Improving semantic understanding in speech language models via brain-tuning </strong>
+  <br> O. Moussa, D. Klakow, and <strong> M. Toneva </strong>
+  <br>
+<span class="badge text-bg-secondary">arXiv 2024</span>
+
+  <a href="#omer-abs" data-bs-toggle="collapse" aria-expanded="false" aria-controls="omer-abs">[abs]</a>
+  <a href="https://arxiv.org/abs/2410.09230" target="_blank">[pdf]</a>
+<div class="collapse" id="omer-abs">
+<p> Speech-language models align impressively with human brain responses to natural language. However, current models rely heavily on low-level speech features, indicating they lack brain-relevant semantics, limiting their utility as models of semantic processing in the brain. In this work, we address this limitation by inducing brain-relevant bias into the models via fine-tuning with fMRI recordings of people listening to natural stories, a process we call brain-tuning. After testing it on three different pretrained backbones, we show that brain-tuning improves alignment with new brain recordings in semantic language regions and reduces reliance on low-level speech features. Notably, brain-tuning leads to 1) consistent improvements in performance across various downstream tasks and 2) a representational space with increased semantic preference. Our results provide the first evidence that incorporating brain signals into the training of language models improves their semantic understanding.
+</div>
+<hr>
+
+<strong> Assessing episodic memory in LLMs with sequence order recall tasks </strong>
+  <br> M. Pink, V. Vo, Q. Wu, J. Mu, J. Turek, U. Hasson, K. Norman, S. Michelmann, A. Huth, and <strong> M. Toneva </strong>
+  <br>
+<span class="badge text-bg-secondary">arXiv 2024</span>
+
+  <a href="#mathis-abs" data-bs-toggle="collapse" aria-expanded="false" aria-controls="mathis-abs">[abs]</a>
+  <a href="https://arxiv.org/abs/2410.08133" target="_blank">[pdf]</a>
+<div class="collapse" id="mathis-abs">
+<p> Current LLM benchmarks focus on evaluating models' memory of facts and semantic relations, primarily assessing semantic aspects of long-term memory. However, in humans, long-term memory also includes episodic memory, which links memories to their contexts, such as the time and place they occurred. The ability to contextualize memories is crucial for many cognitive tasks and everyday functions. This form of memory has not been evaluated in LLMs with existing benchmarks. To address the gap in evaluating memory in LLMs, we introduce Sequence Order Recall Tasks (SORT), which we adapt from tasks used to study episodic memory in cognitive psychology. SORT requires LLMs to recall the correct order of text segments, and provides a general framework that is both easily extendable and does not require any additional annotations. We present an initial evaluation dataset, Book-SORT, comprising 36k pairs of segments extracted from 9 books recently added to the public domain. Based on a human experiment with 155 participants, we show that humans can recall sequence order based on long-term memory of a book. We find that models can perform the task with high accuracy when relevant text is given in-context during the SORT evaluation. However, when presented with the book text only during training, LLMs' performance on SORT falls short. By allowing to evaluate more aspects of memory, we believe that SORT will aid in the emerging development of memory-augmented models.
+</div>
+<hr>
+
+<strong> Speech language models lack important brain-relevant semantics </strong>
+  <br> S.R. Oota, E. Çelik, F. Deniz, and <strong> M. Toneva </strong>
+  <br>
+<span class="badge text-bg-info">ACL 2024</span>
+
+  <a href="#acl-2024" data-bs-toggle="collapse" aria-expanded="false" aria-controls="acl-2024">[abs]</a>
+  <a href="https://arxiv.org/abs/2311.04664" target="_blank">[pdf]</a>
+<div class="collapse" id="acl-2024">
+<p> Despite known differences between reading and listening in the brain, recent work has shown that text-based language models predict both text-evoked and speech-evoked brain activity to an impressive degree. This poses the question of what types of information language models truly predict in the brain. We investigate this question via a direct approach, in which we systematically remove specific low-level stimulus features (textual, speech, and visual) from language model representations to assess their impact on alignment with fMRI brain recordings during reading and listening. Comparing these findings with speech-based language models reveals starkly different effects of low-level features on brain alignment. While text-based models show reduced alignment in early sensory regions post-removal, they retain significant predictive power in late language regions. In contrast, speech-based models maintain strong alignment in early auditory regions even after feature removal but lose all predictive power in late language regions. These results suggest that speech-based models provide insights into additional information processed by early auditory regions, but caution is needed when using them to model processing in late language regions. We make our code publicly available.
+</div>
+<hr>
+
+<strong> Perturbed examples reveal invariances shared by language models </strong>
+  <br> R. Rawal and <strong> M. Toneva </strong>
+  <br>
+<span class="badge text-bg-info">ACL 2024 Findings</span>
+
+  <a href="#acl-2024-findings" data-bs-toggle="collapse" aria-expanded="false" aria-controls="acl-2024-findings">[abs]</a>
+  <a href="https://arxiv.org/abs/2311.04166" target="_blank">[pdf]</a>
+<div class="collapse" id="acl-2024-findings">
+<p> An explosion of work in language is leading to ever-increasing numbers of available natural language processing models, with little understanding of how new models compare to better-understood models. One major reason for this difficulty is saturating benchmark datasets, which may not reflect well differences in model performance in the wild. In this work, we propose a novel framework for comparing two natural language processing models by revealing their shared invariance to interpretable input perturbations that are designed to target a specific linguistic capability (e.g., Synonym-Invariance, Typo-Invariance). Via experiments on models from within the same and across different architecture families, this framework offers a number of insights about how changes in models (e.g., distillation, increase in size, amount of pre-training) affect multiple well-defined linguistic capabilities. Furthermore, we also demonstrate how our framework can enable evaluation of the invariances shared between models that are available as commercial black-box APIs (e.g., InstructGPT family) and models that are relatively better understood (e.g., GPT-2). Across several experiments, we observe that large language models share many of the invariances encoded by models of various sizes, whereas the invariances encoded by large language models are only shared by other large models. Possessing a wide variety of invariances may be a key reason for the recent successes of large language models, and our framework can shed light on the types of invariances that are retained by or emerge in new models.
+</div>
+<hr>
+
+<strong> Joint processing of linguistic properties in brains and language models </strong>
+  <br> S.R. Oota, M. Gupta, and <strong> M. Toneva </strong>
+  <br>
+<span class="badge text-bg-info">NeurIPS 2023</span>
+
+  <a href="#subba-abs" data-bs-toggle="collapse" aria-expanded="false" aria-controls="subba-abs">[abs]</a>
+  <a href="https://arxiv.org/abs/2212.08094" target="_blank">[pdf]</a>
+<div class="collapse" id="subba-abs">
+<p> Language models have been shown to be very effective in predicting brain recordings of subjects experiencing complex language stimuli. For a deeper understanding of this alignment, it is important to understand the alignment between the detailed processing of linguistic information by the human brain versus language models. In NLP, linguistic probing tasks have revealed a hierarchy of information processing in neural language models that progresses from simple to complex with an increase in depth. On the other hand, in neuroscience, the strongest alignment with high-level language brain regions has consistently been observed in the middle layers. These findings leave an open question as to what linguistic information actually underlies the observed alignment between brains and language models. We investigate this question via a direct approach, in which we eliminate information related to specific linguistic properties in the language model representations and observe how this intervention affects the alignment with fMRI brain recordings obtained while participants listened to a story. We investigate a range of linguistic properties (surface, syntactic and semantic) and find that the elimination of each one results in a significant decrease in brain alignment across all layers of a language model. These findings provide direct evidence for the role of specific linguistic information in the alignment between brain and language models, and opens new avenues for mapping the joint information processing in both systems.
+</div>
+<hr>
+
+<strong> What aspects of NLP models and brain datasets affect brain-NLP alignment? </strong>
+  <br> S.R. Oota and <strong> M. Toneva </strong>
+  <br>
+<span class="badge text-bg-success">CCN 2023</span>
+  <a href="#subba-ccn-abs" data-bs-toggle="collapse" aria-expanded="false" aria-controls="subba-ccn-abs">[abs]</a>
+  <a href="https://hal.science/hal-04416456/document" target="_blank">[pdf]</a>
+<div class="collapse" id="subba-ccn-abs">
+<p> Recent brain encoding studies highlight the potential for natural language processing models to improve our understanding of language processing in the brain. Simultaneously, naturalistic fMRI datasets are becoming increasingly available and present even further avenues for understanding the alignment between brains and models. However, with the multitude of available models and datasets, it can be difficult to know what aspects of the models and datasets are important to consider. In this work, we present a systematic study of the brain alignment across five naturalistic fMRI datasets, two stimulus modalities (reading vs. listening), and different Transformer text and speech models. We find that all textbased language models are significantly better at predicting brain responses than all speech models for both modalities. Further, bidirectional language models better predict fMRI responses and generalize across datasets and modalities.
+</div>
+<hr>
+
+<strong> Modeling brain responses to video stimuli using multimodal video transformers </strong>
+  <br> D.T. Dong and <strong> M. Toneva </strong>
+  <br>
+<span class="badge text-bg-success">CCN 2023</span>
+  <a href="#dota-ccn-abs" data-bs-toggle="collapse" aria-expanded="false" aria-controls="dota-ccn-abs">[abs]</a>
+  <a href="https://pure.mpg.de/rest/items/item_3527872_1/component/file_3527873/content" target="_blank">[pdf]</a>
+<div class="collapse" id="dota-ccn-abs">
+<p> Prior work has shown that internal representations of artificial neural networks can significantly predict brain responses elicited by unimodal stimuli (ie reading a book chapter or viewing static images). However, the computational modeling of brain representations of naturalistic video stimuli, such as movies or TV shows, still remains underexplored. In this work, we present a promising approach for modeling vision-language brain representations of video stimuli by a transformer-based model that represents videos jointly through audio, text, and vision. We show that the joint representations of vision and text information are better aligned with brain representations of subjects watching a popular TV show. We further show that the incorporation of visual information improves brain alignment across several regions that support language processing.
+</div>
+<hr>
+
+<strong> Getting aligned on representational alignment </strong>
+  <br> I. Sucholutsky, L. Muttenthaler, (many authors), <strong> M. Toneva </strong>, and T.L. Griffiths
+  <br>
+<span class="badge text-bg-secondary">arXiv 2023</span>
+
+  <a href="#lukas-abs" data-bs-toggle="collapse" aria-expanded="false" aria-controls="lukas-abs">[abs]</a>
+  <a href="https://arxiv.org/abs/2310.13018" target="_blank">[pdf]</a>
+<div class="collapse" id="lukas-abs">
+<p> Biological and artificial information processing systems form representations of the world that they can use to categorize, reason, plan, navigate, and make decisions. To what extent do the representations formed by these diverse systems agree? Can diverging representations still lead to the same behaviors? And how can systems modify their representations to better match those of another system? These questions pertaining to the study of representational alignment are at the heart of some of the most active research areas in contemporary cognitive science, neuroscience, and machine learning. Unfortunately, there is limited knowledge-transfer between research communities interested in representational alignment, and much of the progress in one field ends up being rediscovered independently in another, when greater cross-field communication would be advantageous. To improve communication between fields, we propose a unifying framework that can serve as a common language between researchers studying representational alignment. We survey the literature from the fields of cognitive science, neuroscience, and machine learning, and demonstrate how prior work fits into this framework. Finally, we lay out open problems in representational alignment where progress can benefit all three fields. We hope that our work can catalyze cross-disciplinary collaboration and accelerate progress for all communities studying and developing information processing systems. We note that this is a working paper and encourage readers to reach out with their suggestions for future revisions.
+</div>
+<hr>
+
+<strong> Vision-language integration in multimodal video transformers (partially) aligns with the brain </strong>
+  <br> D.T. Dong and <strong> M. Toneva </strong>
+  <br>
+<span class="badge text-bg-secondary">arXiv 2023</span>
+
+  <a href="#dota-abs" data-bs-toggle="collapse" aria-expanded="false" aria-controls="dota-abs">[abs]</a>
+  <a href="https://arxiv.org/abs/2311.07766" target="_blank">[pdf]</a>
+<div class="collapse" id="dota-abs">
+<p> Integrating information from multiple modalities is arguably one of the essential prerequisites for grounding artificial intelligence systems with an understanding of the real world. Recent advances in video transformers that jointly learn from vision, text, and sound over time have made some progress toward this goal, but the degree to which these models integrate information from modalities still remains unclear. In this work, we present a promising approach for probing a pre-trained multimodal video transformer model by leveraging neuroscientific evidence of multimodal information processing in the brain. Using brain recordings of participants watching a popular TV show, we analyze the effects of multi-modal connections and interactions in a pre-trained multi-modal video transformer on the alignment with uni- and multi-modal brain regions. We find evidence that vision enhances masked prediction performance during language processing, providing support that cross-modal representations in models can benefit individual modalities. However, we don't find evidence of brain-relevant information captured by the joint multi-modal transformer representations beyond that captured by all of the individual modalities. We finally show that the brain alignment of the pre-trained joint representation can be improved by fine-tuning using a task that requires vision-language inferences. Overall, our results paint an optimistic picture of the ability of multi-modal transformers to integrate vision and language in partially brain-relevant ways but also show that improving the brain alignment of these models may require new approaches.
+</div>
+<hr>
+
+<strong> What happens during finetuning of vision transformers: an invariance based investigation </strong>
+  <br> G. Merlin, V. Nanda, R. Rawal, and <strong> M. Toneva </strong>
+  <br>
+  <span class="badge text-bg-info">CoLLAs 2023</span>
+
+  <a href="#invariance-abs" data-bs-toggle="collapse" aria-expanded="false" aria-controls="invariance-abs">[abs]</a>
+  <a href="https://arxiv.org/abs/2307.06006" target="_blank">[pdf]</a>
+<div class="collapse" id="invariance-abs">
+<p> The pretrain-finetune paradigm usually improves downstream performance over training a model from scratch on the same task, becoming commonplace across many areas of machine learning. While pretraining is empirically observed to be beneficial for a range of tasks, there is not a clear understanding yet of the reasons for this effect. In this work, we examine the relationship between pretrained vision transformers and the corresponding finetuned versions on several benchmark datasets and tasks. We present new metrics that specifically investigate the degree to which invariances learned by a pretrained model are retained or forgotten during finetuning. Using these metrics, we present a suite of empirical findings, including that pretraining induces transferable invariances in shallow layers and that invariances from deeper pretrained layers are compressed towards shallower layers during finetuning. Together, these findings contribute to understanding some of the reasons for the successes of pretrained models and the changes that a pretrained model undergoes when finetuned on a downstream task.
+</div>
+<hr>
+
+<strong> Pointwise Representational Similarity </strong>
+  <br> C. Kolling, T. Speicher, V. Nanda, <strong> M. Toneva </strong>, and K. Gummadi
+  <br>
+  <span class="badge text-bg-secondary">arXiv 2023</span>
+
+  <a href="#pnka-abs" data-bs-toggle="collapse" aria-expanded="false" aria-controls="pnka-abs">[abs]</a>
+  <a href="https://arxiv.org/abs/2305.19294" target="_blank">[pdf]</a>
+<div class="collapse" id="pnka-abs">
+<p> With the increasing reliance on deep neural networks, it is important to develop ways to better understand their learned representations. Representation similarity measures have emerged as a popular tool for examining learned representations However, existing measures only provide aggregate estimates of similarity at a global level, i.e. over a set of representations for N input examples. As such, these measures are not well-suited for investigating representations at a local level, i.e. representations of a single input example. Local similarity measures are needed, for instance, to understand which individual input representations are affected by training interventions to models (e.g. to be more fair and unbiased) or are at greater risk of being misclassified. In this work, we fill in this gap and propose Pointwise Normalized Kernel Alignment (PNKA), a measure that quantifies how similarly an individual input is represented in two representation spaces. Intuitively, PNKA compares the similarity of an input's neighborhoods across both spaces. Using our measure, we are able to analyze properties of learned representations at a finer granularity than what was previously possible. Concretely, we show how PNKA can be leveraged to develop a deeper understanding of (a) the input examples that are likely to be misclassified, (b) the concepts encoded by (individual) neurons in a layer, and (c) the effects of fairness interventions on learned representations.
+</div>
+<hr>
+
+<strong> Training language models to summarize narratives improves brain alignment </strong>
+  <br> K.L. Aw and <strong> M. Toneva </strong>
+  <br>
+  <span class="badge text-bg-info">ICLR 2023</span> <span class="badge text-bg-danger">Top 25% notable paper (Spotlight)</span>
+
+  <a href="#summarization-abs" data-bs-toggle="collapse" aria-expanded="false" aria-controls="summarization-abs">[abs]</a>
+  <a href="https://arxiv.org/abs/2212.10898" target="_blank">[pdf]</a>
+<div class="collapse" id="summarization-abs">
+<p> Building systems that achieve a deeper understanding of language is one of the central goals of natural language processing (NLP). Towards this goal, recent works have begun to train language models on narrative datasets which require extracting the most critical information by integrating across long contexts. However, it is still an open question whether these models are learning a deeper understanding of the text, or if the models are simply learning a heuristic to complete the task. This work investigates this further by turning to the one language processing system that truly understands complex language: the human brain. We show that training language models for deeper narrative understanding results in richer representations that have improved alignment to human brain activity. We further find that the improvements in brain alignment are larger for character names than for other discourse features, which indicates that these models are learning important narrative elements. Taken together, these results suggest that this type of training can indeed lead to deeper language understanding. These findings have consequences both for cognitive neuroscience by revealing some of the significant factors behind brain-NLP alignment, and for NLP by highlighting that understanding of long-range context can be improved beyond language modeling.
+</div>
+<hr>
+
+<strong> Large language models can segment narrative events similarly to humans </strong>
+  <br> S. Michelmann, M. Kumar, K.A. Norman,<strong> M. Toneva </strong>
+  <br>
+  <span class="badge text-bg-secondary">arXiv 2023</span>
+
+  <a href="#gpt3events-abs" data-bs-toggle="collapse" aria-expanded="false" aria-controls="gpt3events-abs">[abs]</a>
+  <a href="https://arxiv.org/abs/2301.10297" target="_blank">[pdf]</a>
+<div class="collapse" id="gpt3events-abs">
+<p> Humans perceive discrete events such as "restaurant visits" and "train rides" in their continuous experience. One important prerequisite for studying human event perception is the ability of researchers to quantify when one event ends and another begins. Typically, this information is derived by aggregating behavioral annotations from several observers. Here we present an alternative computational approach where event boundaries are derived using a large language model, GPT-3, instead of using human annotations. We demonstrate that GPT-3 can segment continuous narrative text into events. GPT-3-annotated events are significantly correlated with human event annotations. Furthermore, these GPT-derived annotations achieve a good approximation of the "consensus" solution (obtained by averaging across human annotations); the boundaries identified by GPT-3 are closer to the consensus, on average, than boundaries identified by individual human annotators. This finding suggests that GPT-3 provides a feasible solution for automated event annotations, and it demonstrates a further parallel between human cognition and prediction in large language models. In the future, GPT-3 may thereby help to elucidate the principles underlying human event perception. </div>
+<hr>
+
+<strong> A roadmap to reverse engineering real-world generalization by combining naturalistic paradigms, deep sampling, and predictive computational models </strong>
+<br> P. Herholz, E. Fortier, <strong> M. Toneva </strong>, N. Farrugia, L. Wehbe, V. Borghesani
+<br>
+<span class="badge text-bg-success">Neurons, Behavior, Data Science, and Theory 2023</span>
+<a href="#roadmap-abs" data-bs-toggle="collapse" aria-expanded="false" aria-controls="roadmap-abs">[abs]</a>
+<a href="https://arxiv.org/pdf/2108.10231.pdf" target="_blank">[pdf]</a>
+<div class="collapse" id="roadmap-abs">
+<p> Real-world generalization, e.g., deciding to approach a never-seen-before animal, relies on contextual information as well as previous experiences. Such a seemingly easy behavioral choice requires the interplay of multiple neural mechanisms, from integrative encoding to category-based inference, weighted differently according to the circumstances. Here, we argue that a comprehensive theory of the neuro-cognitive substrates of real-world generalization will greatly benefit from empirical research with three key elements. First, the ecological validity provided by multimodal, naturalistic paradigms. Second, the model stability afforded by deep sampling. Finally, the statistical rigor granted by predictive modeling and computational controls.
+</div>
+<hr>
+
+
+<strong> Combining computational controls with natural text reveals aspects of meaning composition </strong>
+  <br><strong>  M. Toneva</strong>, T. Mitchell, and L. Wehbe
+  <br>
+  <span class="badge text-bg-success">Nature Computational Science 2022</span>
+
+  <a href="#supraword-abs" data-bs-toggle="collapse" aria-expanded="false" aria-controls="supraword-abs">[abs]</a>
+  <a href="https://www.nature.com/articles/s43588-022-00354-6" target="_blank">[pdf]</a>
+<div class="collapse" id="supraword-abs">
+<p> To study a core component of human intelligence---our ability to combine the meaning of words---neuroscientists look for neural correlates of meaning composition, such as brain activity proportional to the difficulty of understanding a sentence. However, little is known about the product of meaning composition---the combined meaning of words beyond their individual meaning. We term this product ``supra-word meaning” and devise a computational representation for it by using recent neural network algorithms and a new technique to disentangle composed- from individual-word meaning. Using functional magnetic resonance imaging, we reveal that hubs that are thought to process lexical-level meaning also maintain supra-word meaning, suggesting a common substrate for lexical and combinatorial semantics. Surprisingly, we cannot detect supra-word meaning in magnetoencephalography, which suggests that composed meaning is maintained through a different neural mechanism than synchronized firing. This sensitivity difference has implications for past neuroimaging results and future wearable neurotechnology. </p>
+</div>
+<hr>
+
+<strong> Memory for long narratives </strong> <br>
+<strong> M. Toneva </strong>, V. Vo, J. Turek, S. Jain, S. Michelmann, M. Capotă, A. Huth, U. Hasson, and K. Norman
+<br>
+<span class="badge text-bg-success">CEMS 2022</span>
+<a href="#CEMS2022-abs" data-bs-toggle="collapse" aria-expanded="false" aria-controls="CEMS2022-abs">[abs]</a>
+<div id="CEMS2022-abs" class="collapse">
+<p>
+Language is the primary way in which we communicate, and yet it is not clear how we draw on previous experiences to understand language. In this work, we aim to investigate the role of episodic memory in language comprehension, by building models of this process and by collecting new benchmark datasets. As an initial step, we sought to characterize how well people remember information from long narratives, by asking participants to recall chapters of a recently-read novel when cued with a passage from the start of the chapter. We evaluated the precision of this recall by comparing its semantic representations--constructed using a language model--to those of the corresponding chapters. Analyses of the data are ongoing. In preliminary analyses, we find that a number of events were recalled with high precision across participants, and we do not find an effect of event position within a chapter on the precision of recall.
+</p>
+</div>
+<hr>
+
+<strong> The Courtois Neuromod project: a deep, multi-domain fMRI dataset to build individual brain models </strong> <br>
+J. Boyle*, B. Pinsard*, V. Borghesani, M. Saint-Laurent, F. Lespinasse, F. Paugam, P. Sainath, S. Rastegarnia­,  A. Boré, J. Chen, A. Cyr, E. Dessureault, E. DuPre, Y. Harel, <strong> M. Toneva </strong>, S. Belleville, S. Brambati, J. Cohen-Adad, A. Fuente, M. Hebart, K. Jerbi, P. Rainville, L. Wehbe, and P. Bellec <br>
+<span class="badge text-bg-success">OHBM 2022</span> <span class="badge text-bg-danger">Oral presentation</span>
+<a href="#HBM2022-abs" data-bs-toggle="collapse" aria-expanded="false" aria-controls="HBM2022-abs">[abs]</a>
+<div id="HBM2022-abs" class="collapse">
+<p>
+Several large individual fMRI datasets have emerged to train artificial intelligence (AI) models on specific cognitive processes, including natural images (NSD1, BOLD500022) and movie viewing (Dr Who3). However, a key feature of the brain is the capacity to integrate and switch between specialized processes and cognitive contexts. The Courtois Project on Neuronal Modelling (CNeuroMod) is creating a rich neuroimaging dataset to probe numerous cognitive domains simultaneously, in the same subjects, with carefully controlled and /or naturalistic stimuli, in order to build integrative AI models. CNeuroMod will eventually feature hundreds of hours of neuroimaging data per subject, and is already the largest individual fMRI dataset currently available.
+<br>CNeuroMod features fMRI recordings from 6 English-speaking participants (3 women). 4 subjects are scanned acutely (80h+ / year) and 2 are scanned intensively (40h+ / year). The 4 acutely scanned participants have reached, or are close to, 100h of MRI data. Information on previously reported datasets (hcptrt, movie10, shinobi, mario, triplet, friends and things) are available at https://docs.cneuromod.ca. Here, we highlight 8 new datasets to (1) validate our set-up, (2) map functional areas, and (3) expand the set of naturalistic stimuli covered.
+First, the effectiveness of our auditory protection protocol and the reactivity of our custom-built controller will be assessed, respectively -  audition task (i.e, auditory threshold inside and outside the mri) and gamepad task (i.e. comparing motor responses using custom vs commercial controller).
+Mapping of visual areas will be possible thanks to a classical retinotopy task (retino), and a functional localizer (fLoc) isolating category-selective cortical regions5. localizers consists of multiple sessions of language tasks spanning sensory modalities (auditory6, visual7), & languages (French and English8). potter dataset consists of reading chapter 9 from Harry Potter book to investigate language processing9. Finally, multfs is a study of working memory using different tasks, stimuli and features. emotions is passive watching of annotated, emotionally evocative short videos10. Preprocessed imaging data, behavioural responses, and physiological recording are formatted in BIDS and available using a registered access system and the DataLad version control tool.  Data request is available via our website - https://www.cneuromod.ca/.
+<br>The CNeuroMod project has assembled an unprecedented resource to study individual functional brain activity for a wide range of controlled and naturalistic stimuli. For each type of stimuli included in CNeuroMod, the relevant subset of data is one of the largest dataset available for the community. Taken together, CNeuroMod opens a unique avenue to create AI models of integrative processes in the brain. We anticipate that this wealth of longitudinal data will help researchers discover novel insights into the way human brains process complex, naturalistic stimuli.
+</p>
+</div>
+<hr>
+
+
+
+<strong> Same cause; different effect in the brain </strong> <br>
+<strong> M. Toneva* </strong>, J. Williams*, A. Bollu, C. Dann, and L. Wehbe<br>
+<span class="badge text-bg-info">CLeaR 2022</span>
+<a href="#cause-abs" data-bs-toggle="collapse" aria-expanded="false" aria-controls="cause-abs">[abs]</a>
+<a href="https://arxiv.org/pdf/2202.10376.pdf" target="_blank">[pdf]</a>
+<a href="https://github.com/brainML/stim-effect" target="_blank">[code]</a>
+<div id="cause-abs" class="collapse">
+<p>
+To study information processing in the brain, neuroscientists manipulate experimental stimuli while
+recording participant brain activity. They can then use encoding models to find out which brain
+“zone" (e.g. which region of interest, volume pixel or electrophysiology sensor) is predicted from the
+stimulus properties. Given the assumptions underlying this setup, when the stimulus properties are
+predictive of the activity in a zone, these properties are understood to cause activity in that zone.
+In recent years, researchers have begun using neural networks to construct representations
+that capture the diverse properties of complex stimuli, such as natural language or natural images.
+Encoding models built using these high-dimensional representations are often able to accurately
+predict the activity in large swathes of cortex, suggesting that the activity in all these brain zones is
+caused by the stimulus properties captured in the neural network representation. It is then natural to
+ask: "Is the activity in these different brain zones caused by the stimulus properties in the same way?"
+In neuroscientific terms, this corresponds to asking if these different zones process the stimulus
+properties in the same way.
+Here, we propose a new framework that enables researchers to ask if the properties of a stimulus
+affects two brain zones in the same way. We use simulated data and two real fMRI datasets with
+complex naturalistic stimuli to show that our framework enables us to make such inferences. Our
+inferences are strikingly consistent between the two datasets, indicating that the proposed framework
+is a promising new tool for neuroscientists to understand how information is processed in the brain.
+</p>
+</div>
+<hr>
+
+<strong> Single-trial MEG data can be denoised through cross-subject predictive modeling </strong> <br>
+S. Ravishankar, <strong>  M. Toneva</strong>, and L. Wehbe <br>
+<span class="badge text-bg-success">Frontiers in Computational Neuroscience 2021</span>
+<a href="#singletrial-abs" data-bs-toggle="collapse" aria-expanded="false" aria-controls="singletrial-abs">[abs]</a>
+<a href="https://www.frontiersin.org/articles/10.3389/fncom.2021.737324/full" target="_blank">[pdf]</a>
+<div id="singletrial-abs" class="collapse">
+<p>
+A pervasive challenge in brain imaging is the presence of noise that hinders investigation of underlying neural processes, with Magnetoencephalography (MEG) in particular having very low Signal-to-Noise Ratio (SNR). The established strategy to increase MEG's SNR involves averaging multiple repetitions of data corresponding to the same stimulus. However, repetition of stimulus can be undesirable, because underlying neural activity has been shown to change across trials, and repeating stimuli limits the breadth of the stimulus space experienced by subjects. In particular, the rising popularity of naturalistic studies with a single viewing of a movie or story necessitates the discovery of new approaches to increase SNR. We introduce a simple framework to reduce noise in single-trial MEG data by leveraging correlations in neural responses across subjects as they experience the same stimulus. We demonstrate its use in a naturalistic reading comprehension task with 8 subjects, with MEG data collected while they read the same story a single time. We find that our procedure results in data with reduced noise and allows for better discovery of neural phenomena. As proof-of-concept, we show that the N400m's correlation with word surprisal, an established finding in literature, is far more clearly observed in the denoised data than the original data. The denoised data also shows higher decoding and encoding accuracy than the original data, indicating that the neural signals associated with reading are either preserved or enhanced after the denoising procedure.
+</div>
+<hr>
+
+<strong> Does injecting linguistic structure into language models lead to better alignment with brain recordings? </strong>
+  <br> M. Abdou, A. V. González, <strong> M. Toneva </strong>, D. Hershcovich, A. Søgaard
+  <br>
+  <span class="badge text-bg-secondary">arXiv 2021</span>
+
+  <a href="#structural-abs" data-bs-toggle="collapse" aria-expanded="false" aria-controls="structural-abs">[abs]</a>
+  <a href="https://arxiv.org/pdf/2101.12608.pdf" target="_blank">[pdf]</a>
+<div class="collapse" id="structural-abs">
+<p> Neuroscientists evaluate deep neural networks for natural language processing as possible candidate models for how language is processed in the brain. These models are often trained without explicit linguistic supervision, but have been shown to learn some linguistic structure in the absence of such supervision (Manning et al., 2020), potentially questioning the relevance of symbolic linguistic theories in modeling such cognitive processes (Warstadt and Bowman,2020). We evaluate across two fMRI datasets whether language models align better with brain recordings, if their attention is biased by annotations from syntactic or semantic formalisms. Using structure from dependency or minimal recursion semantic annotations, we find alignments improve significantly for one of the datasets. For another dataset, we see more mixed results. We present an extensive analysis of these results. Our proposed approach enables the evaluation of more targeted hypotheses about the composition of meaning in the brain, expanding the range of possible scientific inferences a neuroscientist could make, and opens up new opportunities for cross-pollination between computational neuroscience and linguistics.</p>
+</div>
+<hr>
+
+<strong> Modeling task effects on meaning representation in the brain via zero-shot MEG prediction </strong> <br>
+<strong>  M. Toneva*</strong>, O.Stretcu*, B. Poczos, L. Wehbe, and T. Mitchell <br>
+<span class="badge text-bg-info">NeurIPS 2020</span>
+<a href="#task-abs" data-bs-toggle="collapse" aria-expanded="false" aria-controls="task-abs">[abs]</a>
+<a href="https://arxiv.org/pdf/2009.08424.pdf" target="_blank">[pdf]</a>
+<a href="https://github.com/otiliastr/brain_task_effect" target="_blank">[code]</a>
+<a href="https://youtu.be/M1TpiYsRvt0?t=5552" target="_blank">[video]</a>
+<div id="task-abs" class="collapse">
+<p> How meaning is represented in the brain is still one of the big open questions in neuroscience. Does a word (e.g., bird) always have the same representation, or does the task
+under which the word is processed alter its representation (answering “can you eat it?” versus
+“can it fly?”)? The brain activity of subjects who read the same word while performing
+different semantic tasks has been shown to differ across tasks. However, it is still not
+understood how the task itself contributes to this difference. In the current work, we study
+Magnetoencephalography (MEG) brain recordings of participants tasked with answering
+questions about concrete nouns. We investigate the effect of the task (i.e. the question being
+asked) on the processing of the concrete noun by predicting the millisecond-resolution MEG
+recordings as a function of both the semantics of the noun and the task. Using this approach,
+we test several hypotheses about the task-stimulus interactions by comparing the zero-shot
+predictions made by these hypotheses for novel tasks and nouns not seen during training.
+We find that incorporating the task semantics significantly improves the prediction of MEG
+recordings, across participants. The improvement occurs 475 − 550ms after the participants
+first see the word, which corresponds to what is considered to be the ending time of semantic
+processing for a word. These results suggest that only the end of semantic processing of a
+word is task-dependent, and pose a challenge for future research to formulate new hypotheses
+for earlier task effects as a function of the task and stimuli. </p>
+</div>
+<hr>
+
+<strong> Investigating different alignment methods between natural and artificial neural networks for language processing </strong> <br>
+A. Bollu, <strong>  M. Toneva</strong>, and L. Wehbe <br>
+<span class="badge text-bg-success">SNL 2020</span>
+<a href="#nonlinear-abs" data-bs-toggle="collapse" aria-expanded="false" aria-controls="nonlinear-abs">[abs]</a>
+<div id="nonlinear-abs" class="collapse">
+<p>
+Aligning the internal representational spaces of state-of-the-art natural language processing (NLP) models with those of the brain has revealed a great deal of overlap in what both systems capture about their language input. Prior work investigated this alignment using linear encoding models that predict each fMRI voxel as an independent linear combination of the NLP representations[1]. However, a linear mapping may fail to align nonlinearly encoded information within the NLP and fMRI representations, and is not well equipped to benefit from information shared among groups of voxels. Here, we investigate the effect of varying encoding model complexity on alignment performance. We align fMRI recordings of 8 participants reading naturalistic text word-by-word with intermediate representations from BERT[2], a state-of-the-art NLP model, that correspond to the stimulus text[3]. We investigate three encoding models that predict the fMRI voxels as a function of the BERT representations: LinearAnalytical - linear model where weights were estimated using a closed-form solution; LinearGD - linear model trained using gradient descent (GD); MLPGD - multilayer perceptron (MLP) with one hidden layer trained using Batch GD. Two key features separate MLPGD from the linear models: (1) a nonlinear activation layer and (2) predicting all voxels jointly using a shared hidden layer. We include LinearGD to identify whether any performance differences can be attributed to the training method. We evaluate alignment performance by computing the mean Pearson correlations[4] between predicted and true voxel activities within regions of interest (ROIs) known to be consistently activated during language processing[5,6]. We additionally evaluate each encoding model against a noise ceiling[7], computed based on pairwise correlations between participants’ fMRI recordings. We use paired t-tests to test for significant differences between model performance across subjects and pycortex[8] to visualize voxel correlations on a 3D brain surface. We find no significant difference between LinearAnalytical and LinearGD (p>0.05 for all ROIs). LinearGD performs on par with the noise ceiling in 5 ROIs (p>0.2), and worse in the dorsomedial prefrontal cortex (dmPFC, p=0.009), inferior frontal gyrus pars orbitalis (IFGorb, p=0.05) and posterior cingulate (pCingulate, p=0.06), revealing room for improvement in those regions. Differences between LinearGD and MLPGD evaluated based on the whole ROIs are not significant (p>0.05), but qualitative analysis reveals smaller clusters within the dmPFC, IFGorb and pCingulate where MLPGD outperforms LinearGD. We further observe that the encoding models sometimes outperform the estimated noise ceiling, especially within the posterior temporal lobe, angular gyrus and middle frontal gyrus. Interestingly, our qualitative analysis of voxel correlations reveals clusters within the dmPFC, IFGorb and pCingulate that are better predicted by the MLP architecture. One interpretation of this finding is that these clusters may process different information from the rest of the region -- information that only a nonlinear alignment can reveal -- but further investigation is necessary. We also find that the noise ceiling computation provides suboptimal estimates. A better noise ceiling may provide stronger evidence for our observations and highlight other areas where the encoding model can be improved upon as a guide to future research. References: https://tinyurl.com/y2v23rd2
+</div>
+
+<hr>
+<strong> Interpreting and improving natural-language processing (in machines) with natural language-processing (in the brain) </strong>
+ <br> <strong> M. Toneva </strong> and L. Wehbe
+ <br> <span class="badge text-bg-info">NeurIPS 2019</span>
+  <a href="#arxiv-abs" data-bs-toggle="collapse" aria-expanded="false" aria-controls="arxiv-abs">[abs]</a>
+  <a href="https://arxiv.org/pdf/1905.11833.pdf" target="_blank">[pdf]</a>
+  <a href="https://github.com/mtoneva/brain_language_nlp" target="_blank">[code]</a>
+<div id="arxiv-abs" class="collapse">
+<p> Neural networks models for NLP are typically implemented without the explicit
+encoding of language rules and yet they are able to break one performance record
+after another. This has generated a lot of research interest in interpreting the
+representations learned by these networks. We propose here a novel interpretation
+approach that relies on the only processing system we have that does understand
+language: the human brain. We use brain imaging recordings of subjects reading
+complex natural text to interpret word and sequence embeddings from 4 recent
+NLP models - ELMo, USE, BERT and Transformer-XL. We study how their
+representations differ across layer depth, context length, and attention type. Our
+results reveal differences in the context-related representations across these models.
+Further, in the transformer models, we find an interaction between layer depth and
+context length, and between layer depth and attention type. We finally hypothesize
+that altering BERT to better align with brain recordings would enable it to also
+better understand language. Probing the altered BERT using syntactic NLP tasks
+reveals that the model with increased brain-alignment outperforms the original
+model. Cognitive neuroscientists have already begun using NLP networks to study
+the brain, and this work closes the loop to allow the interaction between NLP and
+cognitive neuroscience to be a true cross-pollination. </p>
+</div>
+
+<hr>
+<strong> Inducing brain-relevant bias in natural language processing models </strong> <br>
+D. Schwartz, <strong> M. Toneva </strong>, and L. Wehbe <br>
+<span class="badge text-bg-info">NeurIPS 2019</span>
+<a href="#bert-abs" data-bs-toggle="collapse" aria-expanded="false" aria-controls="bert-abs">[abs]</a>
+<a href="https://arxiv.org/pdf/1911.03268.pdf" target="_blank">[pdf]</a>
+<a href="https://github.com/danrsc/bert_brain_neurips_2019" target="_blank">[code]</a>
+<div id="bert-abs" class="collapse">
+<p> Progress in natural language processing (NLP) models that estimate representations
+  of word sequences has recently been leveraged to improve the understanding of language
+  processing in the brain. However, these models have not been specifically designed to capture
+  the way the brain represents language meaning. We hypothesize that fine-tuning these models to
+  predict recordings of brain activity of people reading text will lead to representations that
+  encode more brain-activity-relevant language information. We demonstrate that a version of BERT,
+  a recently introduced and powerful language model, can improve the prediction of brain activity after
+   fine-tuning. We show that the relationship between language and brain activity learned by BERT
+   during this fine-tuning transfers across multiple participants. We also show that fine-tuned
+   representations learned from both magnetoencephalography (MEG) and functional magnetic
+   resonance imaging (fMRI) are better for predicting fMRI than the representations learned from
+   fMRI alone, indicating that the learned representations capture brain-activity-relevant
+   information that is not simply an artifact of the modality. While changes to language representations
+    help the model predict brain activity, they also do not harm the model's ability to perform downstream
+    NLP tasks. Our findings are notable for research on language understanding in the brain. </p>
+</div>
+
+<hr><strong> Investigating task effects on brain activity during stimulus presentation in MEG </strong> <br>
+<strong>M. Toneva*</strong>, O.Stretcu*, B. Poczos, and T. Mitchell <br>
+<span class="badge text-bg-success">OHBM 2019</span>
+<a href="#HBM2019-abs" data-bs-toggle="collapse" aria-expanded="false" aria-controls="HBM2019-abs">[abs]</a>
+<div id="HBM2019-abs" class="collapse">
+<p> Recorded brain activity of subjects who perceive the same stimulus (e.g. a word) while performing different semantic tasks (e.g. identifying whether the word belongs to a particular category) has been shown to differ across tasks. However, it is not well understood how precisely the task contributes to this brain activity. In the current work, we propose multiple hypotheses of how possible interactions between the task and stimulus semantics can be related to the observed brain activity. We test these hypotheses by designing machine learning models to represent each hypothesis, training them to predict the recorded brain activity, and comparing their performance. We investigate a magnetoencephalography (MEG) dataset, where subjects were tasked to answer 20 yes/no questions (e.g. `Is it manmade?') about concrete nouns and their line drawings. Each question-stimulus pair is presented only once. Here we consider each question as a different task. We show that incorporating task semantics improves the prediction of single-trial MEG data by an average of 10% across subjects.
+</p>
+</div>
+
+<hr>
+<strong> An empirical study of example forgetting during deep neural network learning </strong><br>
+<strong> M. Toneva*</strong>, A. Sordoni*, R. Tachet des Combes*, A. Trischler, Y. Bengio, and G. Gordon <br>
+<span class="badge text-bg-info">ICLR 2019</span>
+<a href="#iclr-abs" data-bs-toggle="collapse" aria-expanded="false" aria-controls="iclr-abs">[abs]</a>
+<a href="https://arxiv.org/pdf/1812.05159.pdf" target="_blank">[pdf]</a>
+<a href="https://github.com/mtoneva/example_forgetting" target="_blank">[code]</a>
+<a href="https://openreview.net/forum?id=BJlxm30cKm" target="_blank">[open review]</a>
+<div id="iclr-abs" class="collapse">
+<p> Inspired by the phenomenon of catastrophic forgetting, we investigate the learning dynamics of neural networks as they train on single classification tasks. Our goal is to understand whether a related phenomenon occurs when data does not undergo a clear distributional shift. We define a ``forgetting event'' to have occurred when an individual training example transitions from being classified correctly to incorrectly over the course of learning. Across several benchmark data sets, we find that: (i) certain examples are forgotten with high frequency, and some not at all; (ii) a data set's (un)forgettable examples generalize across neural architectures; and (iii) based on forgetting dynamics, a significant fraction of examples can be omitted from the training data set while still maintaining state-of-the-art generalization performance.</p>
+</div>
+
+<hr>
+<strong> Word length processing in left lateraloccipital through region-to-region connectivity: an MEG study </strong> <br>
+<strong>M. Toneva</strong> and T. Mitchell <br>
+<span class="badge text-bg-success">OHBM 2018</span>
+<a href="#HBM2018-abs" data-bs-toggle="collapse" aria-expanded="false" aria-controls="HBM2018-abs">[abs]</a>
+<div id="HBM2018-abs" class="collapse">
+<p> A previous MEG study found that many features of stimuli can be decoded around the same time but at different places in the brain, posing the question of how information processing is coordinated between brain regions. Previous approaches to this question are of two types. The first uses a classifier or regression to uncover the relative timings of feature decodability in different brain regions. While addressing when and where information is processed, this approach  does not specify how information is coordinated. The second type estimates when the connectivity between regions changes. While this approach assumes that information is coordinated by communication, it does not directly relate to the information content. We aim to more directly relate processing of information content to connectivity. We examine whether, during presentation of a word stimulus, the length of the word relates to how strongly the region that best encodes word length - left lateraloccipital cortex (LOC) - connects to other regions, at different times. For this purpose, we analyze MEG data from an experiment in which 9 subjects were presented 60 concrete nouns along with their line drawings. Our results suggest that the region that is best at encoding a perceptual stimulus feature - word length - has a connectivity network in which the connection strengths vary with the value of the feature. Furthermore, we observe this relationship prior to the peak information decodability in any region. One hypothesis is that information necessary for the processing of the feature is communicated to the seed region by varying connection strengths. Further analysis for a stimulus feature with a later decodability peak, such as a semantic feature, would add to the current results.
+</p></div>
+
+<hr>
+<strong> MEG representational similarity analysis implicates hierarchical integration in sentence processing </strong> <br>
+N. Rafidi*, D. Schwartz*, <strong>M. Toneva*</strong>, S. Jat, and T. Mitchell <br>
+<span class="badge text-bg-success">OHBM 2018</span>
+<a href="#HBM2018-hier-abs" data-bs-toggle="collapse" aria-expanded="false" aria-controls="HBM2018-hier-abs">[abs]</a>
+<div id="HBM2018-hier-abs" class="collapse">
+<p> Multiple hypotheses exist for how the brain constructs sentence meaning. Most fall into two groups based on their assumptions about the processing order of the words within the sentence. The first considers a sequential processing order, while the second uses hierarchical syntactic rules. We test which hypothesis best explains MEG data recorded during reading of sentences with active and passive voice. Under the sequential hypothesis, the voice of a sentence should change its neural signature because word order changes. Under the hierarchical hypothesis, active and passive sentences corresponding to the same proposition should exhibit similar neural signatures. We test how well three language models explain MEG data collected during noun-verb-noun sentence reading. The models we test are bag of words (BoW), sequential word order, and hierarchical. All three models correlate with the MEG data for some timepoints, after verb presentation and briefly post sentence. However, the hierarchical model correlates significantly for more timepoints and is often the best correlated model even if that correlation is not significant. Our analysis shows that a hierarchical model of meaning correlates with neural activity for a longer duration than models which use a bag of words meaning representation or sequential meaning construction. Additionally, just after verb presentation the hierarchical model is the model best correlated with the MEG data. Our method enables the study of language processing hypotheses in the brain at a fine time scale and can be applied to a wide variety of language models.
+</p></div>
+<hr>
+
+<strong> Applying artificial vision models to human scene understanding </strong><br>
+E. M. Aminoff, <strong>M. Toneva</strong>, A. Shrivastava, X. Chen, I. Misra, A. Gupta, and M. J. Tarr <br>
+<span class="badge text-bg-success">Frontiers in Computational Neuroscience 2015</span>
+<a href="#Frontiers-abs" data-bs-toggle="collapse" aria-expanded="false" aria-controls="Frontiers-abs">[abs]</a>
+<a href="./papers/frontiers.pdf" target="_blank">[pdf]</a>
+<div id="Frontiers-abs" class="collapse">
+<p>How do we understand the complex patterns of neural responses that underlie scene understanding? Studies of the network of brain regions held to be scene-selective&mdash;the parahippocampal/lingual region (PPA), the retrosplenial complex (RSC), and the occipital place area (TOS)&mdash;have typically focused on single visual dimensions (e.g., size), rather than the high-dimensional feature space in which scenes are likely to be neurally represented. Here we leverage well-specified artificial vision systems to explicate a more complex understanding of how scenes are encoded in this functional network. We correlated similarity matrices within three different scene-spaces arising from: (1) BOLD activity in scene-selective brain regions; (2) behavioral measured judgments of visually-perceived scene similarity; and (3) several different computer vision models. These correlations revealed: (1) models that relied on mid- and high-level scene attributes showed the highest correlations with the patterns of neural activity within the scene-selective network; (2) NEIL and SUN&mdash;the models that best accounted for the patterns obtained from PPA and TOS&mdash;were different from the GIST model that best accounted for the pattern obtained from RSC; (3) The best performing models outperformed behaviorally-measured judgments of scene similarity in accounting for neural data. One computer vision method&mdash;NEIL (&ldquo;Never-Ending-Image-Learner&rdquo;), which incorporates visual features learned as statistical regularities across web-scale numbers of scenes&mdash;showed significant correlations with neural activity in all three scene-selective regions and was one of the two models best able to account for variance in the PPA and TOS. We suggest that these results are a promising first step in explicating more fine-grained models of neural scene understanding, including developing a clearer picture of the division of labor among the components of the functional scene-selective brain network.
+</p>
+</div>
+<hr>
+
+<strong>Scene-space encoding within the functional scene-selective network</strong> <br>
+E. M. Aminoff, <strong>M. Toneva</strong>, A. Gupta, and M. J. Tarr <br>
+<span class="badge text-bg-success">VSS 2015</span>
+<a href="#VSS2015-abs" data-bs-toggle="collapse" aria-expanded="false" aria-controls="VSS2015-abs">[abs]</a>
+<div id="VSS2015-abs" class="collapse">
+<p>High-level visual neuroscience has often focused on how different visual categories are encoded in the brain. For example, we know how the brain responds when viewing scenes as compared to faces or other objects - three regions are consistently engaged: the parahippocampal/lingual region (PPA), the retrosplenial complex (RSC), and the occipital place area/transverse occipital sulcus (TOS). Here we explore the fine-grained responses of these three regions when viewing 100 different scenes. We asked: 1) Can neural signals differentiate the 100 exemplars? 2) Are the PPA, RSC, and TOS strongly activated by the same exemplars and, more generally, are the "scene-spaces" representing how scenes are encoded in these regions similar? In an fMRI study of 100 scenes we found that the scenes eliciting the greatest BOLD signal were largely the same across the PPA, RSC, and TOS. Remarkably, the orderings, from strongest to weakest, of scenes were highly correlated across all three regions (r = .82), but were only moderately correlated with non-scene selective brain regions (r = .30). The high similarity across scene-selective regions suggests that a reliable and distinguishable feature space encodes visual scenes. To better understand the potential feature space, we compared the neural scene-space to scene-spaces defined by either several different computer vision models or behavioral measures of scene similarity. Computer vision models that rely on more complex, mid- to high-level visual features best accounted for the pattern of BOLD signal in scene-selective regions and, interestingly, the better-performing models exceeded the performance of our behavioral measures. These results suggest a division of labor where the representations within the PPA and TOS focus on visual statistical regularities within scenes, whereas the representations within the RSC focus on a more high-level representation of scene category. Moreover, the data suggest the PPA mediates between the processing of the TOS and RSC.
+</p>
+</div>
+<hr>
+
+<strong>Towards a model for mid-level feature representation of scenes</strong> <br>
+<strong>M. Toneva</strong>, E. M. Aminoff, A. Gupta, and M. Tarr<br>
+<span class="badge text-bg-info">WIML workshop at NeurIPS 2014</span> <span class="badge text-bg-danger">Oral presentation</span>
+<a href="#JOV2014-abs" data-bs-toggle="collapse" aria-expanded="false" aria-controls="JOV2014-abs">[abs]</a>
+<div id="JOV2014-abs" class="collapse">
+<p>Never Ending Image Learner (NEIL) is a semi-supervised learning algorithm that continuously pulls images from the web and learns relationships among them. NEIL has classified over 400,000 images into 917 scene categories using 84 dimensions - termed &ldquo;attributes&rdquo;. These attributes roughly correspond to mid-level visual features whose differential combinations define a large scene space. As such, NEIL&rsquo;s small set of attributes offers a candidate model for the psychological and neural representation of scenes. To investigate this, we tested for significant similarities between the structure of scene space defined by NEIL and the structure of scene space defined by patterns of human BOLD responses as measured by fMRI. The specific scenes in our study were selected by reducing the number of attributes to the 39 that best accounted for variance in NEIL&rsquo;s scene-attribute co-classification scores. Fifty scene categories were then selected such that each category scored highly on a different set of at most 3 of the 39 attributes. We then selected the two most representative images of the corresponding high-scoring attributes from each scene category, resulting in a total of 100 stimuli used. Canonical correlation analyses (CCA) was used to test the relationship between measured BOLD patterns within the functionally-defined parahippocampal region and NEIL&rsquo;s representation of each stimulus as a vector containing stimulus-attribute co-classification scores on the 39 attributes. CCA revealed significant similarity between the local structures of the fMRI data and the NEIL representations for all participants. In contrast, neither the entire set of 84 attributes nor 39 randomly-chosen attributes produced significant results using this CCA method. Overall, our results indicate that subsets of the attributes learned by NEIL are effective in accounting for variation in the neural encoding of scenes &ndash; as such they represent a first pass compositional model of mid-level features for scene representation.
+</p>
+</div>
+<hr>
+
+<strong> An exploration of social grouping: effects of behavioral mimicry, appearance, and eye gaze</strong><br>
+A. Nawroj, <strong> M. Toneva</strong>, H. Admoni, and B. Scassellati<br>
+<span class="badge text-bg-warning">CogSci 2014</span> <span class="badge text-bg-danger">Oral presentation</span>
+<a href="#COGSCI2014-abs" data-bs-toggle="collapse" aria-expanded="false" aria-controls="COGSCI2014-abs">[abs]</a>
+<a href="./papers/cogsci2014.pdf" target="_blank">[pdf]</a>
+<div id="COGSCI2014-abs" class="collapse">
+<p>People naturally and easily establish social groupings based on appearance, behavior, and other nonverbal signals. However, psychologists have yet to understand how these varied signals interact. For example, which factor has the strongest effect on establishing social groups? What happens when two of the factors conflict? Part of the difficulty of answering these questions is that people are unique and stochastic stimuli. To address this problem, we use robots as a visually simple and precisely controllable platform for examining the relative in- fluence of social grouping features. We examine how behavioral mimicry, similarity of appearance, and direction of gaze influence peoples&rsquo; perception of which group a robot belongs to. Experimental data shows that behavioral mimicry has the most dominant influence on social grouping, though this influence is modulated by appearance. Non-mutual gaze was found to be a weak modulator of the perception of grouping. These results provide insight into the phenomenon of social grouping, and suggest areas for future exploration.
+</p>
+</div>
+<hr>
+<strong> The physical presence of a robot tutor increases cognitive learning gains </strong><br>
+D. Leyzberg, S. Spaulding, <strong>M. Toneva</strong>, and B. Scassellati <br>
+<span class="badge text-bg-warning">CogSci 2012</span>
+<a href="#cogsci2012-abs" data-bs-toggle="collapse" aria-expanded="false" aria-controls="cogsci2012-abs">[abs]</a>
+<a href="./papers/cogsci2012.pdf" target="_blank">[pdf]</a>
+<div id="cogsci2012-abs" class="collapse">
+<p>We present the results of a 100 participant study on the role
+of a robot's physical presence in a robot tutoring task. Participants
+were asked to solve a set of puzzles while being provided
+occasional gameplay advice by a robot tutor. Each participant
+was assigned one of five conditions: (1) no advice,
+(2) robot providing randomized advice, (3) voice of the robot
+providing personalized advice, (4) video representation of the
+robot providing personalized advice, or (5) physically-present
+robot providing personalized advice. We assess the tutor's effectiveness
+by the time it takes participants to complete the
+puzzles. Participants in the robot providing personalized advice
+group solved most puzzles faster on average and improved
+their same-puzzle solving time significantly more than participants
+in any other group. Our study is the first to assess the
+effect of the physical presence of a robot in an automated tutoring
+interaction. We conclude that physical embodiment can
+produce measurable learning gains.</p>
+</div>
+<hr>
+<strong>Robot gaze does not reflexively cue human attention</strong><br>
+H. Admoni, C. Bank, J. Tan, <strong>M. Toneva</strong>, and B. Scassellati <br>
+<span class="badge text-bg-warning">CogSci 2011</span>
+<a href="#cogsci2011-abs" data-bs-toggle="collapse" aria-expanded="false" aria-controls="cogsci2011-abs">[abs]</a>
+<a href="./papers/cogsci2011.pdf" target="_blank">[pdf]</a>
+<div id="cogsci2011-abs" class="collapse">
+<p>Joint visual attention is a critical aspect of typical human interactions.
+Psychophysics experiments indicate that people exhibit
+strong reflexive attention shifts in the direction of another
+person's gaze, but not in the direction of non-social cues such
+as arrows. In this experiment, we ask whether robot gaze elicits
+the same reflexive cueing effect as human gaze. We consider
+two robots, Zeno and Keepon, to establish whether differences
+in cueing depend on level of robot anthropomorphism. Using
+psychophysics methods for measuring attention by analyzing
+time to identification of a visual probe, we compare attention
+shifts elicited by five directional stimuli: a photograph of
+a human face, a line drawing of a human face, Zeno's gaze,
+Keepon's gaze and an arrow. Results indicate that all stimuli
+convey directional information, but that robots fail to elicit attentional
+cueing effects that are evoked by non-robot stimuli,
+regardless of robot anthropomorphism.</p>
+</div>
+</section>
+</main>
+<footer class="bg-light pt-3">
+  <div class="container">
+    <p class="text-muted">Last updated, November 2024.</p>
+  </div>
+</footer>
+
+
+	</body>
+</html>

@@ -1,0 +1,42 @@
+
+    body {
+      font-size: 16px;
+      min-height: 75rem;
+      padding-top: 4.5rem;
+      padding-bottom: 4.5rem;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+
+    a {
+      color: #337ab7;
+    }
+
+    .nav-link {
+      font-size: 22px;
+      color: #888;
+    }
+
+    .navbar-brand {
+      font-size: 22px;
+      font-weight: bolder;
+    }
+
+
+    .btn-outline-primary {
+        color: #337ab7;
+        border-color: #337ab7;
+    }
+    .btn-outline-primary:hover {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #337ab7;
+}
+    html {
+      position: relative;
+      min-height: 100%;
+    }
