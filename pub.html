@@ -107,7 +107,7 @@ respect to the user’s skill level and understanding.
   <span class="badge text-bg-info">EMNLP 2024</span>
 
   <a href="#gabriele-abs" data-bs-toggle="collapse" aria-expanded="false" aria-controls="gabriele-abs">[abs]</a>
-  <a href="https://arxiv.org/abs/2212.00596" target="_blank">[pdf]</a>
+  <a href="https://aclanthology.org/2024.emnlp-main.1024/" target="_blank">[pdf]</a>
 <div class="collapse" id="gabriele-abs">
 <p>  Pretrained language models have been shown to significantly predict brain recordings of people comprehending language. Recent work suggests that the prediction of the next word is a key mechanism that contributes to this alignment. What is not yet understood is whether prediction of the next word is necessary for this observed alignment or simply sufficient, and whether there are other shared mechanisms or information that are similarly important. In this work, we take a step towards understanding the reasons for brain alignment via two simple perturbations in popular pretrained language models. These perturbations help us design contrasts that can control for different types of information. By contrasting the brain alignment of these differently perturbed models, we show that improvements in alignment with brain recordings are due to more than improvements in next-word prediction and word-level information.
 </div>
@@ -143,7 +143,7 @@ respect to the user’s skill level and understanding.
 <span class="badge text-bg-info">ACL 2024</span>
 
   <a href="#acl-2024" data-bs-toggle="collapse" aria-expanded="false" aria-controls="acl-2024">[abs]</a>
-  <a href="https://arxiv.org/abs/2311.04664" target="_blank">[pdf]</a>
+  <a href="https://aclanthology.org/2024.acl-long.462/" target="_blank">[pdf]</a>
 <div class="collapse" id="acl-2024">
 <p> Despite known differences between reading and listening in the brain, recent work has shown that text-based language models predict both text-evoked and speech-evoked brain activity to an impressive degree. This poses the question of what types of information language models truly predict in the brain. We investigate this question via a direct approach, in which we systematically remove specific low-level stimulus features (textual, speech, and visual) from language model representations to assess their impact on alignment with fMRI brain recordings during reading and listening. Comparing these findings with speech-based language models reveals starkly different effects of low-level features on brain alignment. While text-based models show reduced alignment in early sensory regions post-removal, they retain significant predictive power in late language regions. In contrast, speech-based models maintain strong alignment in early auditory regions even after feature removal but lose all predictive power in late language regions. These results suggest that speech-based models provide insights into additional information processed by early auditory regions, but caution is needed when using them to model processing in late language regions. We make our code publicly available.
 </div>
@@ -155,7 +155,7 @@ respect to the user’s skill level and understanding.
 <span class="badge text-bg-info">ACL 2024 Findings</span>
 
   <a href="#acl-2024-findings" data-bs-toggle="collapse" aria-expanded="false" aria-controls="acl-2024-findings">[abs]</a>
-  <a href="https://arxiv.org/abs/2311.04166" target="_blank">[pdf]</a>
+  <a href="https://aclanthology.org/2024.findings-acl.687/" target="_blank">[pdf]</a>
 <div class="collapse" id="acl-2024-findings">
 <p> An explosion of work in language is leading to ever-increasing numbers of available natural language processing models, with little understanding of how new models compare to better-understood models. One major reason for this difficulty is saturating benchmark datasets, which may not reflect well differences in model performance in the wild. In this work, we propose a novel framework for comparing two natural language processing models by revealing their shared invariance to interpretable input perturbations that are designed to target a specific linguistic capability (e.g., Synonym-Invariance, Typo-Invariance). Via experiments on models from within the same and across different architecture families, this framework offers a number of insights about how changes in models (e.g., distillation, increase in size, amount of pre-training) affect multiple well-defined linguistic capabilities. Furthermore, we also demonstrate how our framework can enable evaluation of the invariances shared between models that are available as commercial black-box APIs (e.g., InstructGPT family) and models that are relatively better understood (e.g., GPT-2). Across several experiments, we observe that large language models share many of the invariances encoded by models of various sizes, whereas the invariances encoded by large language models are only shared by other large models. Possessing a wide variety of invariances may be a key reason for the recent successes of large language models, and our framework can shed light on the types of invariances that are retained by or emerge in new models.
 </div>
@@ -167,7 +167,7 @@ respect to the user’s skill level and understanding.
 <span class="badge text-bg-info">NeurIPS 2023</span>
 
   <a href="#subba-abs" data-bs-toggle="collapse" aria-expanded="false" aria-controls="subba-abs">[abs]</a>
-  <a href="https://arxiv.org/abs/2212.08094" target="_blank">[pdf]</a>
+  <a href="https://proceedings.neurips.cc/paper_files/paper/2023/file/3a0e2de215bd17c39ad08ba1d16c1b12-Paper-Conference.pdf" target="_blank">[pdf]</a>
 <div class="collapse" id="subba-abs">
 <p> Language models have been shown to be very effective in predicting brain recordings of subjects experiencing complex language stimuli. For a deeper understanding of this alignment, it is important to understand the alignment between the detailed processing of linguistic information by the human brain versus language models. In NLP, linguistic probing tasks have revealed a hierarchy of information processing in neural language models that progresses from simple to complex with an increase in depth. On the other hand, in neuroscience, the strongest alignment with high-level language brain regions has consistently been observed in the middle layers. These findings leave an open question as to what linguistic information actually underlies the observed alignment between brains and language models. We investigate this question via a direct approach, in which we eliminate information related to specific linguistic properties in the language model representations and observe how this intervention affects the alignment with fMRI brain recordings obtained while participants listened to a story. We investigate a range of linguistic properties (surface, syntactic and semantic) and find that the elimination of each one results in a significant decrease in brain alignment across all layers of a language model. These findings provide direct evidence for the role of specific linguistic information in the alignment between brain and language models, and opens new avenues for mapping the joint information processing in both systems.
 </div>
@@ -225,7 +225,7 @@ respect to the user’s skill level and understanding.
   <span class="badge text-bg-info">CoLLAs 2023</span>
 
   <a href="#invariance-abs" data-bs-toggle="collapse" aria-expanded="false" aria-controls="invariance-abs">[abs]</a>
-  <a href="https://arxiv.org/abs/2307.06006" target="_blank">[pdf]</a>
+  <a href="https://proceedings.mlr.press/v232/merlin23a/merlin23a.pdf" target="_blank">[pdf]</a>
 <div class="collapse" id="invariance-abs">
 <p> The pretrain-finetune paradigm usually improves downstream performance over training a model from scratch on the same task, becoming commonplace across many areas of machine learning. While pretraining is empirically observed to be beneficial for a range of tasks, there is not a clear understanding yet of the reasons for this effect. In this work, we examine the relationship between pretrained vision transformers and the corresponding finetuned versions on several benchmark datasets and tasks. We present new metrics that specifically investigate the degree to which invariances learned by a pretrained model are retained or forgotten during finetuning. Using these metrics, we present a suite of empirical findings, including that pretraining induces transferable invariances in shallow layers and that invariances from deeper pretrained layers are compressed towards shallower layers during finetuning. Together, these findings contribute to understanding some of the reasons for the successes of pretrained models and the changes that a pretrained model undergoes when finetuned on a downstream task.
 </div>
@@ -249,7 +249,7 @@ respect to the user’s skill level and understanding.
   <span class="badge text-bg-info">ICLR 2023</span> <span class="badge text-bg-danger">Top 25% notable paper (Spotlight)</span>
 
   <a href="#summarization-abs" data-bs-toggle="collapse" aria-expanded="false" aria-controls="summarization-abs">[abs]</a>
-  <a href="https://arxiv.org/abs/2212.10898" target="_blank">[pdf]</a>
+  <a href="https://openreview.net/pdf/c67334d169d975ca4c1f56fc722f9eb680ebf5b9.pdf" target="_blank">[pdf]</a>
 <div class="collapse" id="summarization-abs">
 <p> Building systems that achieve a deeper understanding of language is one of the central goals of natural language processing (NLP). Towards this goal, recent works have begun to train language models on narrative datasets which require extracting the most critical information by integrating across long contexts. However, it is still an open question whether these models are learning a deeper understanding of the text, or if the models are simply learning a heuristic to complete the task. This work investigates this further by turning to the one language processing system that truly understands complex language: the human brain. We show that training language models for deeper narrative understanding results in richer representations that have improved alignment to human brain activity. We further find that the improvements in brain alignment are larger for character names than for other discourse features, which indicates that these models are learning important narrative elements. Taken together, these results suggest that this type of training can indeed lead to deeper language understanding. These findings have consequences both for cognitive neuroscience by revealing some of the significant factors behind brain-NLP alignment, and for NLP by highlighting that understanding of long-range context can be improved beyond language modeling.
 </div>
@@ -312,7 +312,7 @@ Mapping of visual areas will be possible thanks to a classical retinotopy task (
 <strong> M. Toneva* </strong>, J. Williams*, A. Bollu, C. Dann, and L. Wehbe<br>
 <span class="badge text-bg-info">CLeaR 2022</span>
 <a href="#cause-abs" data-bs-toggle="collapse" aria-expanded="false" aria-controls="cause-abs">[abs]</a>
-<a href="https://arxiv.org/pdf/2202.10376.pdf" target="_blank">[pdf]</a>
+<a href="https://proceedings.mlr.press/v177/toneva22a/toneva22a.pdf" target="_blank">[pdf]</a>
 <a href="https://github.com/brainML/stim-effect" target="_blank">[code]</a>
 <div id="cause-abs" class="collapse">
 <p>
@@ -365,7 +365,7 @@ A pervasive challenge in brain imaging is the presence of noise that hinders inv
 <strong>  M. Toneva*</strong>, O.Stretcu*, B. Poczos, L. Wehbe, and T. Mitchell <br>
 <span class="badge text-bg-info">NeurIPS 2020</span>
 <a href="#task-abs" data-bs-toggle="collapse" aria-expanded="false" aria-controls="task-abs">[abs]</a>
-<a href="https://arxiv.org/pdf/2009.08424.pdf" target="_blank">[pdf]</a>
+<a href="https://papers.nips.cc/paper/2020/file/38a8e18d75e95ca619af8df0da1417f2-Paper.pdf" target="_blank">[pdf]</a>
 <a href="https://github.com/otiliastr/brain_task_effect" target="_blank">[code]</a>
 <a href="https://youtu.be/M1TpiYsRvt0?t=5552" target="_blank">[video]</a>
 <div id="task-abs" class="collapse">
@@ -403,7 +403,7 @@ Aligning the internal representational spaces of state-of-the-art natural langua
  <br> <strong> M. Toneva </strong> and L. Wehbe
  <br> <span class="badge text-bg-info">NeurIPS 2019</span>
   <a href="#arxiv-abs" data-bs-toggle="collapse" aria-expanded="false" aria-controls="arxiv-abs">[abs]</a>
-  <a href="https://arxiv.org/pdf/1905.11833.pdf" target="_blank">[pdf]</a>
+  <a href="https://proceedings.neurips.cc/paper_files/paper/2019/file/749a8e6c231831ef7756db230b4359c8-Paper.pdf" target="_blank">[pdf]</a>
   <a href="https://github.com/mtoneva/brain_language_nlp" target="_blank">[code]</a>
 <div id="arxiv-abs" class="collapse">
 <p> Neural networks models for NLP are typically implemented without the explicit
@@ -431,7 +431,7 @@ cognitive neuroscience to be a true cross-pollination. </p>
 D. Schwartz, <strong> M. Toneva </strong>, and L. Wehbe <br>
 <span class="badge text-bg-info">NeurIPS 2019</span>
 <a href="#bert-abs" data-bs-toggle="collapse" aria-expanded="false" aria-controls="bert-abs">[abs]</a>
-<a href="https://arxiv.org/pdf/1911.03268.pdf" target="_blank">[pdf]</a>
+<a href="https://proceedings.neurips.cc/paper_files/paper/2019/file/2b8501af7b64d1aaae7dd832805f0709-Paper.pdf" target="_blank">[pdf]</a>
 <a href="https://github.com/danrsc/bert_brain_neurips_2019" target="_blank">[code]</a>
 <div id="bert-abs" class="collapse">
 <p> Progress in natural language processing (NLP) models that estimate representations
@@ -465,7 +465,7 @@ D. Schwartz, <strong> M. Toneva </strong>, and L. Wehbe <br>
 <strong> M. Toneva*</strong>, A. Sordoni*, R. Tachet des Combes*, A. Trischler, Y. Bengio, and G. Gordon <br>
 <span class="badge text-bg-info">ICLR 2019</span>
 <a href="#iclr-abs" data-bs-toggle="collapse" aria-expanded="false" aria-controls="iclr-abs">[abs]</a>
-<a href="https://arxiv.org/pdf/1812.05159.pdf" target="_blank">[pdf]</a>
+<a href="https://openreview.net/pdf?id=BJlxm30cKm" target="_blank">[pdf]</a>
 <a href="https://github.com/mtoneva/example_forgetting" target="_blank">[code]</a>
 <a href="https://openreview.net/forum?id=BJlxm30cKm" target="_blank">[open review]</a>
 <div id="iclr-abs" class="collapse">
