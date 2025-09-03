@@ -62,6 +62,18 @@
 </div>
 <hr>
 
+<strong> Positional biases shift as inputs approach context window limits </strong>
+  <br> B. Veseli, J. Chibane, <strong> M. Toneva </strong>, and A. Koller
+  <br>
+<span class="badge text-bg-info">COLM 2025</span>
+
+  <a href="#blerta-abs" data-bs-toggle="collapse" aria-expanded="false" aria-controls="blerta-abs">[abs]</a>
+  <a href="https://arxiv.org/abs/2508.07479" target="_blank">[pdf]</a>
+<div class="collapse" id="blerta-abs">
+<p> Large Language Models (LLMs) often struggle to use information across long inputs effectively. Prior work has identified positional biases, such as the Lost in the Middle (LiM) effect, where models perform better when information appears at the beginning (primacy bias) or end (recency bias) of the input, rather than in the middle. However, long-context studies have not consistently replicated these effects, raising questions about their intensity and the conditions under which they manifest. To address this, we conducted a comprehensive analysis using relative rather than absolute input lengths, defined with respect to each model's context window. Our findings reveal that the LiM effect is strongest when inputs occupy up to 50% of a model's context window. Beyond that, the primacy bias weakens, while recency bias remains relatively stable. This effectively eliminates the LiM effect; instead, we observe a distance-based bias, where model performance is better when relevant information is closer to the end of the input. Furthermore, our results suggest that successful retrieval is a prerequisite for reasoning in LLMs, and that the observed positional biases in reasoning are largely inherited from retrieval. These insights have implications for long-context tasks, the design of future LLM benchmarks, and evaluation methodologies for LLMs handling extended inputs.
+</div>
+<hr>
+
 <strong> Investigating the effects of fairness interventions using pointwise representational similarity </strong>
   <br> C. Kolling, T. Speicher, V. Nanda, <strong> M. Toneva </strong>, and K.P. Gummadi 
   <br>
