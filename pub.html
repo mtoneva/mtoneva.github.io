@@ -67,7 +67,7 @@
 <div class="collapse" id="schmitt-abs">
 
 <p>
-Comparisons between deep neural networks and the human brain have become central to cognitive neuroscience over the past decade. This perspective reviews how these comparisons have developed across vision and language, what they have revealed about information processing and computational goals, and the methodological challenges that remain. We discuss the need for more refined models and experimental frameworks, including approaches that can move beyond representational similarity toward mechanistic understanding.
+Over the past decade, comparisons between deep neural networks (DNNs) and the human brain have become central to cognitive neuroscience. Early work focused on vision, driven by the success of convolutional neural networks in object recognition, before such comparisons later gained traction in language with the rise of large-scale language models. These comparisons have validated existing hypotheses and generated new ones, challenging views of information processing, connectivity, and computational goals. Despite progress, debates persist over the interpretability and validity of mapping DNNs to brains, underscoring the need for more refined models and methods. Looking ahead, integrating cross-modal insights from vision and language, together with improved modeling and experimental frameworks, promises to advance the mechanistic understanding of cognition.
 </p>
 
 </div>
@@ -91,7 +91,7 @@ Comparisons between deep neural networks and the human brain have become central
 <div class="collapse" id="taleb-abs">
 
 <p>
-Transformer models trained on sensory stimuli such as vision and audition can capture aspects of neural representations. Here, we investigate whether chemical foundation models similarly align with neural processing during olfactory perception. We study the relationship between representations learned by chemical transformer models and brain activity associated with olfactory processing, providing a computational perspective on the neural representation of smell.
+Transformer models pre-trained on sensory stimuli such as vision and audition have been shown to capture neural representations and to effectively predict brain responses to corresponding stimuli. Olfactory perception, however, remains a relatively underexplored sensory modality in this context. Understanding the alignment between chemical transformer models and brain activity during olfactory processing is particularly challenging due to the distributed nature of olfactory neural processing and the inherently subjective character of olfactory experience, which is strongly shaped by individual memory and prior exposure. In this work, we evaluate the representational alignment between pre-trained transformer models of chemical structure and functional magnetic resonance imaging recordings collected from human participants during olfactory perception. Using voxel-wise encoding models, we show that representations extracted from state-of-the-art molecular transformers exhibit strong alignment with olfactory brain responses, often exceeding handcrafted molecular fingerprints and physicochemical descriptors. We further analyze how this alignment varies across brain regions, model layers, and temporal response components, revealing distinct region-specific and temporal patterns. These findings represent a step toward understanding how that pre-trained chemical transformers capture meaningful structure relevant to human olfactory perception and provide insight into how molecular features relate to neural processing in the olfactory system.
 </p>
 
 </div>
@@ -110,12 +110,33 @@ Transformer models trained on sensory stimuli such as vision and audition can ca
 
 <a href="#pink-abs" data-bs-toggle="collapse" aria-expanded="false" aria-controls="pink-abs">[abs]</a>
 
-<a href="https://arxiv.org/abs/2607.22575" target="_blank">[pdf]</a>
+<a href="https://openreview.net/pdf?id=sycSMgogxM" target="_blank">[pdf]</a>
 
 <div class="collapse" id="pink-abs">
 
 <p>
-Long-term episodic memory requires retrieving experiences that unfold over extended timescales. We investigate whether long-context language models exhibit behavioral signatures of episodic memory using a temporal order memory task based on a full-length novel. We find that models exhibit the characteristic distance effect observed in humans. Mechanistic analyses further reveal that performance relies on a one-dimensional temporal code that is reinstated during retrieval by a single time-reinstatement attention head.
+Human episodic memory supports the retrieval of
+experiences that unfold over extended timescales,
+yet the computational mechanisms underlying this
+ability remain debated due to the limited mechanistic accessibility in long-term memory experiments in humans. Long-context LLMs may offer
+promising ways to reveal plausible computational
+mechanisms that drive this type of retrieval. Here,
+we investigate whether and how LLMs capture
+the core behavioral signatures of episodic memory
+via a temporal order memory task. Using a new
+dataset of human behavior based on memory of
+a full-length novel, we show that models exhibit
+the same characteristic distance effect observed in
+humans on this task. We next apply long-context
+mechanistic interpretability analyses to uncover
+how models solve this task, and find that model
+performance relies on a one-dimensional temporal
+code that is reinstated during retrieval by a single
+time-reinstatement attention head. These findings support temporal context reinstatement as an
+important mechanism for episodic-like temporalorder memory in LLMs, offering new insights
+into how temporal aspects of long-term episodic
+memory may be instantiated in both artificial and
+biological systems.
 </p>
 
 </div>
@@ -139,7 +160,7 @@ Long-term episodic memory requires retrieving experiences that unfold over exten
 <div class="collapse" id="moussa-rabbit-abs">
 
 <p>
-We introduce RABBiT, a rapidly adaptive BOLD foundation model for predicting speech-elicited brain responses. The model is adapted through brain-tuning to efficiently capture individual differences in neural responses, enabling accurate zero-shot and few-shot prediction for new participants. RABBiT provides a scalable approach for studying language processing in the brain while substantially reducing the amount of participant-specific calibration data required.
+Language understanding in the brain is context-dependent, varying across experimental stimuli and individuals, which makes it difficult to build computational models that generalize across both. This calls for a foundation model of language-evoked brain activity that can capture shared structure while adapting efficiently to new participants and inputs. We introduce RABBiT (Rapidly Adaptive BOLD foundation model via BraIn-Tuning), a compact audio-to-fMRI encoder designed for accurate zero- and few-shot prediction. A comprehensive evaluation on 324 participants across multiple unseen fMRI datasets shows that RABBiT enables accurate zero-shot prediction of fMRI responses to natural speech across auditory and language-selective regions, surpassing the SOTA foundation model for fMRI and predictions based on group averages. With as little as 10 minutes of participant-specific data, RABBiT further improves performance via parameter-efficient tuning, substantially outperforming per-participant linear models. RABBiT's performance is driven by two key innovations: (1) learned region-specific attention, and (2) a decomposition of brain responses into shared and subject-specific components, combined with a brain-tuned speech backbone. In addition to supporting strong predictive accuracy, the structured, region-specific representations that RABBiT learns enable interpretability. By eliminating the need for extensive per-participant data and model fitting, RABBiT enables scalable population-level analyses of language in the human brain.
 </p>
 
 </div>
@@ -163,7 +184,7 @@ We introduce RABBiT, a rapidly adaptive BOLD foundation model for predicting spe
 <div class="collapse" id="rekrut-abs">
 
 <p>
-We investigate neural correlates of programming expertise using EEG and machine learning. Using an existing dataset of programmers with varying levels of experience, we analyze relationships between EEG activity and expertise and evaluate classification of programming skill. The results identify EEG features and brain regions associated with expertise and demonstrate that neural signals can support classification of programmer skill levels.
+Accurately assessing a programmer's skill level is critical for hiring, team composition, and performance evaluation in the software industry. Conventional methods, such as coding tests or interviews, often fail to capture the full spectrum of cognitive abilities underlying programming expertise. This study explores using electroencephalography (EEG) and machine learning to investigate neural correlates of programming skill. We analyzed an existing EEG dataset recorded during code comprehension from 37 programmers with 1 to 30 years of experience (8.1 +/- 6.3 years) to examine relationships between neural activity and expertise. Additionally, we conducted classification experiments using Random Forest classifiers with diverse features for binary (experts vs. novices) and multi-class (experts, intermediates, novices) setups. We identified EEG features and brain regions associated with programming expertise. Specifically, EEG entropy showed the strongest correlation with skill level. Furthermore, experts' brains were characterized by highly localized centro-frontal activation, whereas frontal activation in other groups was part of a more distributed network. Regarding classification, our setup achieved an average accuracy of 91.83% (binary) and 78.15% (multi-class) in stratified 10-fold cross-validation, while leave-one-subject-out validation achieved 85.00% and 58.80%, respectively. Individual frequency bands outperformed full-spectrum analyses, and both program comprehension and resting-state data yielded strong results. These findings demonstrate that EEG features effectively capture neural correlates across different skill levels and highlight the potential of neural data to complement traditional methods of skill assessment.
 </p>
 
 </div>
@@ -187,7 +208,22 @@ We investigate neural correlates of programming expertise using EEG and machine 
 <div class="collapse" id="abdelsalam-abs">
 
 <p>
-We investigate whether humans and large language models are confused by similar patterns in source code. We compare LLM perplexity with neurophysiological responses from human programmers while they comprehend clean and confusing code. We find that spikes in LLM perplexity correlate with human fixation-related potentials in both location and amplitude, suggesting similarities between the regions of code that challenge humans and LLMs. We further use these relationships to identify regions of code likely to elicit confusion in human programmers.
+Already today, humans and programming assistants based on large
+language models (LLMs) collaborate in everyday programming
+tasks. Clearly, a misalignment between how LLMs and programmers
+comprehend code can lead to misunderstandings, inefficiencies, low
+code quality, and bugs. A key question in this space is whether humans and LLMs are confused by the same kind of code. This would
+not only guide our choices of integrating LLMs in software engineering workflows but also inform about possible improvements of
+LLMs. To this end, we conducted an empirical study comparing an
+LLM to human programmers comprehending clean and confusing
+code. We operationalized comprehension for the LLM by using LLM
+perplexity, and for human programmers using neurophysiological
+responses (in particular, EEG-based fixation-related potentials). We
+found that LLM perplexity spikes correlate, both in terms of location and amplitude, with human neurophysiological responses
+that indicate confusion. This result suggests that LLMs and humans
+are similarly confused about the code. Based on these findings, we
+devised a data-driven, LLM-based approach to identify regions of
+confusion in code that elicit confusion in human programmers.
 </p>
 
 </div>
@@ -206,12 +242,12 @@ We investigate whether humans and large language models are confused by similar 
 
 <a href="#sun-abs" data-bs-toggle="collapse" aria-expanded="false" aria-controls="sun-abs">[abs]</a>
 
-<a href="https://arxiv.org/abs/2603.30002" target="_blank">[pdf]</a>
+<a href="https://openreview.net/pdf?id=9lycwRxAOI" target="_blank">[pdf]</a>
 
 <div class="collapse" id="sun-abs">
 
 <p>
-Mechanistic interpretability seeks to identify succinct algorithmic processes underlying neural network behavior, but scaling and generalizing such interpretations remains difficult. We introduce the concept of interpretive equivalence, which determines whether two models share a common interpretation without requiring an explicit description of that interpretation. We formalize this notion, develop an algorithm for estimating interpretive equivalence, and establish connections between interpretations, circuits, and representations.
+Mechanistic interpretability (MI) is an emerging framework for interpreting neural networks. Given a task and model, MI aims to discover a succinct algorithmic process, an interpretation, that explains the model's decision process on that task. However, MI is difficult to scale and generalize. This stems in part from two key challenges: there is no precise notion of a valid interpretation; and, generating interpretations is often an ad hoc process. In this paper, we address these challenges by defining and studying the problem of interpretive equivalence: determining whether two different models share a common interpretation, without requiring an explicit description of what that interpretation is. At the core of our approach, we propose and formalize the principle that two interpretations of a model are equivalent if all of their possible implementations are also equivalent. We develop an algorithm to estimate interpretive equivalence and case study its use on Transformer-based models. To analyze our algorithm, we introduce necessary and sufficient conditions for interpretive equivalence based on models' representation similarity. We provide guarantees that simultaneously relate a model's algorithmic interpretations, circuits, and representations. Our framework lays a foundation for the development of more rigorous evaluation methods of MI and automated, generalizable interpretation discovery methods.
 </p>
 
 </div>
@@ -235,7 +271,16 @@ Mechanistic interpretability seeks to identify succinct algorithmic processes un
 <div class="collapse" id="merlin-abs">
 
 <p>
-We investigate the functional role of brain alignment in language models by constructing brain-misaligned models that are trained to predict brain activity poorly while maintaining language-modeling performance. Across more than 200 downstream tasks spanning semantics, syntax, discourse, reasoning, and morphology, we compare brain-aligned and brain-misaligned models. The results show substantial differences in linguistic performance, providing evidence that brain alignment can affect language understanding beyond the brain-prediction objective itself.
+While brain-aligned large language models (LLMs) have garnered attention for
+their potential as cognitive models and for potential for enhanced safety and trustworthiness in AI, the role of this brain alignment for linguistic competence remains uncertain. In this work, we investigate the functional implications of brain
+alignment by introducing brain-misaligned models–LLMs intentionally trained to
+predict brain activity poorly while maintaining high language modeling performance. We evaluate these models on over 200 downstream tasks encompassing
+diverse linguistic domains, including semantics, syntax, discourse, reasoning, and
+morphology. By comparing brain-misaligned models with well-matched brainaligned counterparts, we isolate the specific impact of brain alignment on language
+understanding. Our experiments reveal that brain misalignment substantially impairs downstream performance, highlighting the critical role of brain alignment in
+achieving robust linguistic competence. These findings underscore the importance
+of brain alignment in LLMs and offer novel insights into the relationship between
+neural representations and linguistic processing.
 </p>
 
 </div>
@@ -259,7 +304,7 @@ We investigate the functional role of brain alignment in language models by cons
 <div class="collapse" id="slayr-abs">
 
 <p>
-We introduce a transformer-based rectified-flow model for generating scene layouts in a structured token space that can be decoded into bounding boxes and object labels. The approach provides an interpretable intermediate representation between text and images. We introduce a benchmark for evaluating generated layouts and show that our model provides a favorable combination of plausibility and variety while being substantially smaller and faster than competing approaches.
+We introduce SLayR, Scene Layout Generation with Rectified flow, a novel transformer-based model for text-to-layout generation, which can integrate into a complete text-to-image pipeline. SLayR addresses a domain in which current text-to-image pipelines struggle: generating scene layouts that are of significant variety and plausibility, when the given prompt is ambiguous and does not provide constraints on the scene. In this setting, SLayR surpasses existing baselines, including LLMs. To accurately evaluate the layout generation, we introduce a new benchmark suite, including numerical metrics and a carefully designed repeatable human-evaluation procedure that assesses the plausibility and variety of images that are generated. We show that our method sets a new state of the art for achieving high plausibility and variety simultaneously, while being at least 3× times smaller in the number of parameters.
 </p>
 
 </div>
@@ -283,7 +328,7 @@ We introduce a transformer-based rectified-flow model for generating scene layou
 <div class="collapse" id="brain-data-abs">
 
 <p>
-Brain-tuning language models has been proposed as a way to align models more closely with the human brain, but it remains unclear what brain data contributes beyond additional training on the underlying linguistic stimuli. We compare jointly brain-and-stimulus-tuned models, brain-tuned models, stimulus-tuned models, and pretrained models across a diverse set of linguistic tasks. We find that jointly-tuned models outperform the other models, and that brain-tuned models outperform models trained only on the stimulus text, demonstrating that brain recordings provide an additional training signal for language models.
+Brain-tuning language models (LMs)—fine-tuning LMs to predict brain recordings elicited by linguistic stimuli—has been proposed as a promising way to align LMs closer to the human brain, with recent work reporting gains on a small number of downstream tasks. However, it remains unclear what benefits brain data provide beyond those obtainable from further training on the same underlying linguistic input, and whether such benefits generalize across tasks. Here, we present a comprehensive evaluation of jointly-tuned LMs, trained on both brain recordings and text-based stimuli, brain-tuned LMs and LMs tuned only on text-based stimuli (i.e., stimulus-tuned LMs). We compare models across a diverse suite of downstream linguistic tasks. We find that jointly-tuned LMs outperform other fine-tuned and pretrained models, and that brain-tuned LMs outperform stimulus-tuned LMs, demonstrating the richness of brain data as an additional training signal for LMs.
 </p>
 
 </div>
@@ -306,7 +351,21 @@ Brain-tuning language models has been proposed as a way to align models more clo
 <div class="collapse" id="proietti-abs">
 
 <p>
-We introduce a fine-grained input attribution method for identifying the words that contribute most strongly to brain-LLM alignment. Applying the method to naturalistic language and fMRI data, we find that brain alignment and next-word prediction rely on substantially different subsets of words. Next-word prediction emphasizes syntax and positional biases, whereas brain alignment places greater emphasis on semantic and discourse-level information.
+Understanding the alignment between large language models (LLMs) and human brain activity can reveal computational principles underlying language processing. This work describes a
+pipeline to apply attribution methods to the brainLLM alignment setting to identify the specific
+words most important for this alignment. As a
+case study, we leverage it to study a contentious research question about brain-LLM alignment: the
+relationship between brain alignment (BA) and
+next-word prediction (NWP). Across two naturalistic fMRI datasets, we find that BA and NWP rely
+on largely distinct word subsets: NWP exhibits recency and primacy biases with a focus on syntax,
+while BA prioritizes semantic and discourse-level
+information with a more targeted recency effect.
+This work advances our understanding of how
+LLMs relate to human language processing and
+highlights differences in feature reliance between
+BA and NWP. Beyond this study, our attribution
+method can be broadly applied to explore the cognitive relevance of model predictions in diverse
+language processing tasks.
 </p>
 
 </div>
@@ -333,7 +392,16 @@ We introduce a fine-grained input attribution method for identifying the words t
 <div class="collapse" id="friends-abs">
 
 <p>
-We extend brain-tuning to a multimodal audio-video model and investigate whether tuning to brain activity elicited while participants watch <i>Friends</i> can improve representations relevant to social cognition. Brain-tuning increases alignment with the superior temporal sulcus and improves performance on a social cognition task involving sarcasm detection. These results demonstrate the extension of brain-tuning to multimodal models and social-cognitive processing.
+Recent studies on audio models [27, 15] show brain-tuning–fine-tuning models to
+better predict corresponding fMRI activity–improves brain alignment and increases
+performance on downstream semantic and audio tasks. We extend this approach to
+a multimodal audio-video model to enhance social cognition, targeting the Superior
+Temporal Sulcus (STS), a key region for social processing, while subjects watch
+Friends. We find significant increases in brain alignment to the STS and an adjacent
+ROI, as well as improvements to a social cognition task related to the training
+data–sarcasm detection in sitcoms. In summary, our study extends brain-tuning to
+the multi-modal domain, demonstrating improvements to a downstream task after
+tuning to a relevant functional region.
 </p>
 
 </div>
@@ -357,7 +425,20 @@ We extend brain-tuning to a multimodal audio-video model and investigate whether
 <div class="collapse" id="kolling-abs">
 
 <p>
-We investigate whether large language models can serve as model organisms for studying human associative learning. We use behavioral paradigms inspired by associative learning and examine whether LLMs exhibit patterns that resemble human learning behavior. The work explores how model behavior can be used to formulate and test hypotheses about cognitive mechanisms of associative learning.
+Associative learning–forming links between co-occurring items–is fundamental
+to human cognition, reshaping internal representations in complex ways. Testing
+hypotheses on how representational changes occur in biological systems is challenging, but large language models (LLMs) offer a scalable alternative. Building
+on LLMs’ in-context learning, we adapt a cognitive neuroscience associative learning paradigm and investigate how representations evolve across six models. Our
+initial findings reveal a non-monotonic pattern consistent with the Non-Monotonic
+Plasticity Hypothesis, with moderately similar items differentiating after learning.
+Leveraging the controllability of LLMs, we further show that this differentiation is
+modulated by the overlap of associated items with the broader vocabulary–a factor
+we term vocabulary interference, capturing how new associations compete with
+prior knowledge. We find that higher vocabulary interference amplifies differentiation, suggesting that representational change is influenced by both item similarity
+and global competition. Our findings position LLMs not only as powerful tools
+for studying representational dynamics in human-like learning systems, but also as
+accessible and general computational models for generating new hypotheses about
+the principles underlying memory reorganization in the brain.
 </p>
 
 </div>
@@ -381,7 +462,23 @@ We investigate whether large language models can serve as model organisms for st
 <div class="collapse" id="multibrain-abs">
 
 <p>
-We introduce a scalable brain-tuning approach that jointly trains pretrained speech language models to predict brain responses from multiple participants. The resulting models generalize across participants and require substantially less fMRI data for adaptation to new individuals. Brain-tuning also improves overall brain alignment and downstream semantic performance, demonstrating benefits in both neuroscience and language-modeling settings.
+Pretrained language models are remarkably effective in aligning with human brain
+responses elicited by natural language stimuli, positioning them as promising
+model organisms for studying language processing in the brain. However, existing
+approaches for both estimating and improving this brain alignment are participantdependent and highly affected by the amount of data available per participant,
+hindering both generalization to new participants and population-level analyses.
+In this work, we address these limitations by introducing a scalable, generalizable
+brain-tuning method, in which we fine-tune pretrained speech language models
+to jointly predict fMRI responses from multiple participants. We demonstrate
+that the resulting brain-tuned models exhibit strong individual brain alignment
+while generalizing across participants. Specifically, our method leads to 1) a
+5-fold decrease in the amount of fMRI data needed to predict brain data from
+new participants, 2) up to a 50% increase in the overall brain alignment, and 3)
+strong generalization to new unseen datasets. Furthermore, this multi-participant
+brain-tuning additionally improves downstream performance on semantic tasks,
+suggesting that training using brain data from multiple participants leads to more
+generalizable semantic representations. Taken together, these findings demonstrate a bidirectional benefit between neuroscience and AI, helping bridge the
+gap between the two fields.
 </p>
 
 </div>
@@ -402,12 +499,28 @@ We introduce a scalable brain-tuning approach that jointly trains pretrained spe
 
 <a href="#alignment-abs" data-bs-toggle="collapse" aria-expanded="false" aria-controls="alignment-abs">[abs]</a>
 
-<a href="https://openreview.net/forum?id=6gZf3QbYbE" target="_blank">[pdf]</a>
+<a href="https://openreview.net/pdf?id=Hiq7lUh4Yn" target="_blank">[pdf]</a>
 
 <div class="collapse" id="alignment-abs">
 
 <p>
-Representational alignment asks how similar representations formed by biological and artificial information-processing systems are, whether representational similarities correspond to similar behavior, and how representations can be modified to better match one another. This perspective surveys developments across cognitive science, neuroscience, and machine learning, highlighting methodological connections and open problems that can benefit from greater exchange across these fields.
+Biological and artificial information processing systems form representations of the world
+that they can use to categorize, reason, plan, navigate, and make decisions. How can we
+measure the similarity between the representations formed by these diverse systems? Do
+similarities in representations then translate into similar behavior? If so, then how can
+a system’s representations be modified to better match those of another system? These
+questions pertaining to the study of representational alignment are at the heart of some of the
+most promising research areas in contemporary cognitive science, neuroscience, and machine
+learning. In this Perspective, we survey the exciting recent developments in representational
+alignment research in the fields of cognitive science, neuroscience, and machine learning.
+Despite their overlapping interests, there is limited knowledge transfer between these fields,
+so work in one field ends up duplicated in another, and useful innovations are not shared
+effectively. To improve communication, we propose a unifying framework that can serve as
+a common language for research on representational alignment, and map several streams
+of existing work across fields within our framework. We also lay out open problems in
+representational alignment where progress can benefit all three of these fields. We hope
+that this paper will catalyze cross-disciplinary collaboration and accelerate progress for all
+communities studying and developing information processing systems.
 </p>
 
 </div>
